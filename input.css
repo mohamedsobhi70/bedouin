@@ -4,6 +4,11 @@
 .owl-carousel .owl-stage-outer {
   overflow: visible;
 }
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background: #20c7ab;
+  padding: 20px 32px !important;
+}
 @layer base {
   @font-face {
     font-family: Recoleta;
