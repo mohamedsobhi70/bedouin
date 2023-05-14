@@ -687,6 +687,14 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -787,6 +795,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-zoom-out {
   cursor: zoom-out;
 }
@@ -807,8 +819,16 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -915,6 +935,18 @@ video {
   gap: 70px;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.gap-\[35px\] {
+  gap: 35px;
+}
+
+.gap-\[7px\] {
+  gap: 7px;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -939,6 +971,26 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[10px\] {
+  border-radius: 10px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -956,6 +1008,15 @@ video {
 .border-\[\#717F7A\] {
   --tw-border-opacity: 1;
   border-color: rgb(113 127 122 / var(--tw-border-opacity));
+}
+
+.border-\[\] {
+  border-color: ;
+}
+
+.border-\[\#D8D8D8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 216 216 / var(--tw-border-opacity));
 }
 
 .bg-\[\#00332F\] {
@@ -1086,6 +1147,10 @@ video {
   padding: 30px;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1131,6 +1196,36 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.px-\[25px\] {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.px-\[26px\] {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -1141,6 +1236,38 @@ video {
 
 .pr-2\.5 {
   padding-right: 0.625rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pr-11 {
+  padding-right: 2.75rem;
 }
 
 .text-center {
@@ -1188,6 +1315,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1228,6 +1365,30 @@ video {
   line-height: 76px;
 }
 
+.leading-\[28px\] {
+  line-height: 28px;
+}
+
+.leading-\[22px\] {
+  line-height: 22px;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
+}
+
+.tracking-\[2\%\] {
+  letter-spacing: 2%;
+}
+
+.tracking-\[0\.02em\] {
+  letter-spacing: 0.02em;
+}
+
 .text-\[\#1A352B\] {
   --tw-text-opacity: 1;
   color: rgb(26 53 43 / var(--tw-text-opacity));
@@ -1264,6 +1425,24 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#002421E5\] {
+  color: #002421E5;
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#002421\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 36 33 / var(--tw-text-opacity));
+}
+
+.text-\[\#3F5856\] {
+  --tw-text-opacity: 1;
+  color: rgb(63 88 86 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1308,6 +1487,16 @@ video {
 .placeholder\:text-white::placeholder {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#3F5856\]::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(63 88 86 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#3F5856\]::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(63 88 86 / var(--tw-text-opacity));
 }
 
 .backdrop\:blur-\[20px\]::backdrop {
