@@ -9,6 +9,9 @@
   background: #20c7ab;
   padding: 20px 32px !important;
 }
+.lightbox.open{
+  display:flex;
+}
 @layer base {
   @font-face {
     font-family: Recoleta;

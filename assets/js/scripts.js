@@ -15,6 +15,7 @@ if ($(".counter").length > 0) {
     )
 }
 
+// gallery masonary
 if ($(".gallery").length > 0) {
 
     $('.gallery').packery({
@@ -22,6 +23,8 @@ if ($(".gallery").length > 0) {
         gutter: 20,
     });
 }
+
+//rooms carousel
 if ($(".rooms-carousel").length > 0) {
 
     $('.rooms-carousel').owlCarousel({
@@ -51,6 +54,7 @@ if ($(".rooms-carousel").length > 0) {
     })
 }
 
+//check in and chekout date
 if ($(".from").length > 0) {
     $(function () {
         let dateFormat = "mm/dd/yy",
@@ -86,6 +90,7 @@ if ($(".from").length > 0) {
 
 }
 
+//footer in and chekout date
 if ($(".from-1").length > 0) {
     $(function () {
         let dateFormat = "mm/dd/yy",
@@ -114,9 +119,57 @@ if ($(".from-1").length > 0) {
             } catch (error) {
                 date = null;
             }
-
             return date;
         }
     });
 
+}
+
+// gallery lightbox 
+if ($(".lightbox").length > 0) {
+    const galleryItems = document.querySelectorAll(".gallery-item"), // all items
+        totalgalleryItems = galleryItems.length, // length of the item
+        lightbox = document.querySelector(".lightbox"),
+        lightboxImg = lightbox.querySelector(".lightbox-img");
+        let itemIndex = 0;
+
+    for (let i = 0; i < totalgalleryItems; i++) {
+        galleryItems[i].addEventListener("click", function () {
+            itemIndex = i;
+            changeItem();
+            toggleLightbox();
+        });
+    }
+    function changeItem() {
+        imgSrc = galleryItems[itemIndex].querySelector("img").getAttribute("src");
+        lightboxImg.src = imgSrc;
+    }
+
+    function toggleLightbox() {
+        lightbox.classList.toggle("open");
+    }
+
+    function prevItem() {
+        if (itemIndex === 0) {
+            itemIndex = totalgalleryItems - 1;
+        } else {
+            itemIndex--;
+        }
+        changeItem();
+    }
+
+    function nextItem() {
+        if (itemIndex === totalgalleryItems - 1) {
+            itemIndex = 0;
+        } else {
+            itemIndex++;
+        }
+        changeItem();
+    }
+    // closing the lightbox
+    lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
+            toggleLightbox();
+        }
+    });
 }
