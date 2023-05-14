@@ -9,6 +9,8 @@
     <title>Bedouin Moon</title>
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/datarange.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -54,7 +56,9 @@
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check in</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-white text-base leading-6">-- / -- / --</span>
+                            <input title="from"
+                                class="from w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="from" name="from" placeholder="-- / -- / --">
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
                     </div>
@@ -62,25 +66,28 @@
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check out</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-white text-base leading-6">-- / -- / --</span>
+                            <input title="to"
+                                class="to w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="to" name="to" placeholder="-- / -- / --">
+
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
                     </div>
 
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-white text-base leading-6">01</span>
+                        <div class="flex items-center justify-between counter">
+                            <span class="counter-num text-white text-base leading-6">01</span>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
-                                    class="border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
+                                    class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.66536 1.66536H0.332031V0.332031H9.66536V1.66536Z" fill="white" />
                                     </svg>
                                 </button>
                                 <button type="button" title="increase"
-                                    class="border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
+                                    class="increase border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -242,6 +249,7 @@
                 </header>
                 <div class="flex flex-col gap-9">
                     <div class="owl-carousel owl-theme rooms-carousel">
+
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
                             <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
@@ -258,7 +266,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-1.jpg" alt="room">
+                                <img src="assets/images/rooms-1.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -289,7 +298,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-2.jpg" alt="room">
+                                <img src="assets/images/rooms-2.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -320,7 +330,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-3.jpg" alt="room">
+                                <img src="assets/images/rooms-3.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -351,7 +362,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-1.jpg" alt="room">
+                                <img src="assets/images/rooms-1.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -382,7 +394,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-2.jpg" alt="room">
+                                <img src="assets/images/rooms-2.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -413,7 +426,8 @@
                                         Book Now
                                     </span>
                                 </a>
-                                <img src="assets/images/rooms-3.jpg" alt="room">
+                                <img src="assets/images/rooms-3.jpg" class="w-full h-full object-cover" width="370"
+                                    height="390" alt="room">
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
@@ -427,6 +441,7 @@
                                 <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
+
 
                     </div>
 
@@ -621,7 +636,7 @@
                 <div class="">
                     <iframe title="google map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.7149077842178!2d34.51377855906053!3d28.518223975828363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15ab4ad311d23417%3A0x43ed16503f62376e!2z2YHZhtiv2YIg2KfZhNmC2YXYsSDYp9mE2KjYr9mI2Yk!5e0!3m2!1sar!2seg!4v1684016170156!5m2!1sar!2seg"
-                        width="100%" height="521"></iframe>
+                        width="1170" height="521"></iframe>
                 </div>
             </div>
         </section>
@@ -633,7 +648,62 @@
         <div class="bg-[#00332F] flex flex-col gap-12">
 
             <img src="assets/images/footer-1.svg" width="1440" height="68" class="w-full" alt="footer shape">
-            <div class=""></div>
+
+            <div class="container flex justify-center">
+                <div
+                    class="border border-[#6F6F6F] rounded-2xl p-[15px] bg-[#FFFFFF1F] backdrop:blur-[20px] flex gap-[15px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                        <p class="text-lg text-white leading-6 font-medium">Check in</p>
+                        <div class="flex items-center justify-between">
+                            <input title="from"
+                                class="from-1 w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="from-1" name="from-1" placeholder="-- / -- / --">
+                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
+                        </div>
+                    </div>
+
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                        <p class="text-lg text-white leading-6 font-medium">Check out</p>
+                        <div class="flex items-center justify-between">
+                            <input title="to"
+                                class="to-1 w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="to-1" name="to-1" placeholder="-- / -- / --">
+
+                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
+                        </div>
+                    </div>
+
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                        <p class="text-lg text-white leading-6 font-medium">Guests</p>
+                        <div class="flex items-center justify-between counter">
+                            <span class="counter-num text-white text-base leading-6">01</span>
+                            <div class="flex gap-[5px] items-center">
+                                <button type="button" title="decrease"
+                                    class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
+                                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.66536 1.66536H0.332031V0.332031H9.66536V1.66536Z" fill="white" />
+                                    </svg>
+                                </button>
+                                <button type="button" title="increase"
+                                    class="increase border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.66536 5.66536H5.66536V9.66536H4.33203V5.66536H0.332031V4.33203H4.33203V0.332031H5.66536V4.33203H9.66536V5.66536Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="bg-[#FFA227] py-5 px-[34px] rounded-lg text-xl leading-[30px] font-medium">
+                        Check Availability
+                    </a>
+                </div>
+            </div>
             <img src="assets/images/footer-2.svg" width="1440" height="68" class="w-full" alt="footer shape">
 
         </div>
@@ -729,43 +799,12 @@
         </div>
 
     </footer>
+
     <script src="assets/js/jquiry.js"></script>
+    <script src="assets/js/jquiry-ui.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/masonary.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script>
-        $('.gallery').packery({
-            itemSelector: '.grid-item',
-            gutter: 20,
-        });
-
-        $('.rooms-carousel').owlCarousel({
-            loop: false,
-            margin: 30,
-            nav: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        });
-
-        // Go to the next item
-        $('.nxtBtn').click(function () {
-            $('.rooms-carousel').trigger('next.owl.carousel');
-        })
-        // Go to the previous item
-        $('.prevBtn').click(function () {
-            $('.rooms-carousel').trigger('prev.owl.carousel');
-        })
-    </script>
 </body>
 
 </html>
