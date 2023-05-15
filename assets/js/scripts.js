@@ -1,5 +1,4 @@
 // counter 
-
 if ($(".counter").length > 0) {
     $(".counter").each(function () {
         let th = $(this);
@@ -14,6 +13,7 @@ if ($(".counter").length > 0) {
     }
     )
 }
+// *********************************************
 
 // gallery masonary
 if ($(".gallery").length > 0) {
@@ -23,6 +23,7 @@ if ($(".gallery").length > 0) {
         gutter: 20,
     });
 }
+// *********************************************
 
 //rooms carousel
 if ($(".rooms-carousel").length > 0) {
@@ -53,11 +54,12 @@ if ($(".rooms-carousel").length > 0) {
         $('.rooms-carousel').trigger('prev.owl.carousel');
     })
 }
+// *********************************************
 
 //check in and chekout date
 if ($(".from").length > 0) {
     $(function () {
-        let dateFormat = "mm/dd/yy",
+        let dateFormat = "dd/mm/yy",
             from = $(".from")
                 .datepicker({
                     defaultDate: "+1w",
@@ -89,11 +91,12 @@ if ($(".from").length > 0) {
     });
 
 }
+// *********************************************
 
 //footer in and chekout date
 if ($(".from-1").length > 0) {
     $(function () {
-        let dateFormat = "mm/dd/yy",
+        let dateFormat = "dd/mm/yy",
             from = $(".from-1")
                 .datepicker({
                     defaultDate: "+1w",
@@ -124,6 +127,7 @@ if ($(".from-1").length > 0) {
     });
 
 }
+// *********************************************
 
 // gallery lightbox 
 if ($(".lightbox").length > 0) {
@@ -173,3 +177,4 @@ if ($(".lightbox").length > 0) {
         }
     });
 }
+// *********************************************
