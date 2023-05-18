@@ -17,9 +17,9 @@
 
 <body class="font-Recoleta">
     <!-- Bedouin Header  -->
-    <header class="absolute w-full top-5 z-30">
-        <div class="container flex items-center justify-between">
-            <div class="w-[201px]">
+    <header class="absolute w-full top-0 LG:top-5 z-30">
+        <div class="container flex items-center justify-between py-6 px-8 lg:p-0">
+            <div class="lg:w-[201px] order-5 lg:-order-1">
                 <button type="button" title="menu">
                     <img src="assets/images/menu.svg" class="" width="21" height="24" alt="menu">
                 </button>
@@ -29,7 +29,7 @@
                 <img src="assets/images/logo.svg" width="118" height="96" alt="Bedouin Logo">
             </a>
 
-            <a href="#" class="text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
+            <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
                 Reserve Your Room
             </a>
         </div>
@@ -39,20 +39,20 @@
     <main>
         <!-- hero section  -->
         <section
-            class="relative min-h-[779px] bg-[url(../images/hero.jpg)] bg-cover bg-bottom flex items-center justify-center">
+            class="relative h-screen lg:h-auto min-h-[779px] bg-[url(../images/hero.jpg)] bg-cover bg-bottom flex items-center justify-center">
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#00000066] to-[#00000066]"></div>
-            <div class="relative container flex flex-col gap-10 items-center">
+            <div class="relative container flex flex-col gap-10 items-center px-8 lg:px-0">
                 <div class="flex flex-col gap-4 items-center">
-                    <h1 class="text-[70px] text-white leading-[76px] font-medium">
+                    <h1 class="text-3xl lg:text-[70px] text-white leading-9 text-center lg:leading-[76px] font-medium">
                         Unique Diving Experiences
                     </h1>
-                    <p class="text-xl text-white leading-[30px]">
+                    <p class="text-base lg:text-xl text-white leading-5 lg:leading-[30px] text-center">
                         Your journey to complete relaxation starts right now.
                     </p>
                 </div>
                 <div
-                    class="border border-[#6F6F6F] rounded-2xl p-[15px] bg-[#FFFFFF1F] backdrop:blur-[20px] flex gap-[15px]">
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    class="w-full lg:w-auto border border-[#6F6F6F] rounded-2xl p-[15px] bg-[#FFFFFF1F] backdrop:blur-[20px] flex flex-col lg:flex-row gap-[15px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check in</p>
                         <div class="flex items-center justify-between">
                             <input title="from" autocomplete="off"
@@ -62,7 +62,7 @@
                         </div>
                     </div>
 
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check out</p>
                         <div class="flex items-center justify-between">
                             <input title="to" autocomplete="off"
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
                         <div class="flex items-center justify-between counter">
                             <span class="counter-num text-white text-base leading-6">01</span>
@@ -99,7 +99,8 @@
                         </div>
                     </div>
 
-                    <a href="#" class="bg-[#FFA227] py-5 px-[34px] rounded-lg text-xl leading-[30px] font-medium">
+                    <a href="#"
+                        class="bg-[#FFA227] py-5 text-center px-[34px] rounded-lg text-lg lg:text-xl leading-[30px] font-medium">
                         Check Availability
                     </a>
                 </div>
@@ -107,39 +108,39 @@
         </section>
 
         <!-- gallery section  -->
-        <section class="py-32">
-            <div class="container flex flex-col gap-24">
-                <h2 class="text-[70px] text-black leading-[76px] text-center max-w-[500px] mx-auto">
+        <section class="py-12 lg:py-32 px-8 lg:px-0">
+            <div class="container flex flex-col gap-8 lg:gap-24">
+                <h2 class="text-[32px] lg:text-[70px] text-black leading-[48px] lg:leading-[76px] text-center max-w-[500px] mx-auto">
                     Unique views all year round.
                 </h2>
                 <div class="grid grid-cols-4 grid-rows-3 gap-5">
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-2 row-span-1">
-                        <img src="assets/images/gallery-1.jpg" class="cursor-pointer w-full h-full object-cover" width="560" height="232"
-                            alt="gallery">
+                        <img src="assets/images/gallery-1.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="560" height="232" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
-                        <img src="assets/images/gallery-2.jpg" class="cursor-pointer w-full h-full object-cover" width="270" height="466"
-                            alt="gallery">
+                        <img src="assets/images/gallery-2.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="270" height="466" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
-                        <img src="assets/images/gallery-3.jpg" class="cursor-pointer w-full h-full object-cover" width="270" height="223"
-                            alt="gallery">
+                        <img src="assets/images/gallery-3.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="270" height="223" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
-                        <img src="assets/images/gallery-4.jpg" class="cursor-pointer w-full h-full object-cover" width="270" height="510"
-                            alt="gallery">
+                        <img src="assets/images/gallery-4.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="270" height="510" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
-                        <img src="assets/images/gallery-5.jpg" class="cursor-pointer w-full h-full object-cover" width="270" height="214"
-                            alt="gallery">
+                        <img src="assets/images/gallery-5.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="270" height="214" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
-                        <img src="assets/images/gallery-6.jpg" class="cursor-pointer w-full h-full object-cover" width="270" height="223"
-                            alt="gallery">
+                        <img src="assets/images/gallery-6.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="270" height="223" alt="gallery">
                     </div>
                     <div class="rounded-[10px] gallery-item overflow-hidden col-span-3 row-span-1">
-                        <img src="assets/images/gallery-7.jpg" class="cursor-pointer w-full h-full object-cover" width="850" height="277"
-                            alt="gallery">
+                        <img src="assets/images/gallery-7.jpg" class="cursor-pointer w-full h-full object-cover"
+                            width="850" height="277" alt="gallery">
                     </div>
                 </div>
 
@@ -147,104 +148,116 @@
         </section>
 
         <!-- testimonials section  -->
-        <section class="py-32 bg-[#F8F8F8]">
-            <div class="container flex flex-col gap-24">
-                <h2 class="text-[70px] text-black leading-[76px] text-center">
+        <section class="py-12 lg:py-32 bg-[#F8F8F8] overflow-x-hidden">
+            <div class="container flex flex-col  gap-8 lg:gap-24">
+                <h2 class="text-[32px] lg:text-[70px] text-black leading-[48px] lg:leading-[76px] text-center">
                     Our Wall Of Love
                 </h2>
-                <div class="grid grid-cols-3 gap-8 items-center">
+                <div class="owl-carousel owl-theme testimonials-carousel">
 
                     <!-- item  -->
-                    <div
-                        class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
-                        <div class="px-8 flex flex-col gap-4 items-center justify-center">
-                            <div class="flex flex-col gap-4 items-center justify-center">
-                                <div class="relative">
-                                    <img src="assets/images/ser-1.png" width="64" height="64" alt="service">
-                                    <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
-                                        width="24" height="24" alt="service shape">
+                    <div class="item my-auto">
+                        <div
+                            class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
+                            <div class="px-8 flex flex-col gap-4 items-center justify-center">
+                                <div class="flex flex-col gap-4 items-center justify-center">
+                                    <div class="relative">
+                                        <img src="assets/images/ser-1.png" width="64" height="64" alt="service">
+                                        <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
+                                            width="24" height="24" alt="service shape">
+                                    </div>
+                                    <div class=" flex flex-col items-center">
+                                        <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Drew Medhurst
+                                        </h3>
+                                        <p class="text-base text-[#717F7A] leading-6">Berkshire</p>
+                                    </div>
                                 </div>
-                                <div class=" flex flex-col items-center">
-                                    <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Drew Medhurst</h3>
-                                    <p class="text-base text-[#717F7A] leading-6">Berkshire</p>
-                                </div>
+                                <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
+                                    Eius delectus exercitationem non in iusto ut illum. Labore sint esse architecto
+                                    optio
+                                    quas. Atque repellendus ut ad. Iste odit placeat ut sed nobis est.
+                                </p>
                             </div>
-                            <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
-                                Eius delectus exercitationem non in iusto ut illum. Labore sint esse architecto optio
-                                quas. Atque repellendus ut ad. Iste odit placeat ut sed nobis est.
-                            </p>
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
+                                alt="shape">
                         </div>
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
-                            alt="shape">
+                    </div>
+                    <!-- item  -->
+                    <div class="item my-auto">
+
+                        <div
+                            class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
+
+                            <div class="px-8 flex flex-col gap-4 items-center justify-center">
+                                <div class="flex flex-col gap-4 items-center justify-center">
+                                    <div class="relative">
+                                        <img src="assets/images/ser-2.png" width="64" height="64" alt="service">
+                                        <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
+                                            width="24" height="24" alt="service shape">
+                                    </div>
+                                    <div class=" flex flex-col items-center">
+                                        <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Gregory Larkin
+                                        </h3>
+                                        <p class="text-base text-[#717F7A] leading-6">Cambridgeshire</p>
+                                    </div>
+                                </div>
+                                <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
+                                    Qui vero nemo voluptatem voluptatem et molestiae eius. Doloribus animi sunt
+                                    consequatur
+                                    voluptas qui. Mollitia et et enim iste a architecto qui et commodi. Nesciunt non
+                                    doloremque enim fugit occaecati. Quidem ut vero. Similique natus suscipit vel
+                                    consectetur commodi similique et.
+                                </p>
+                            </div>
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
+                                alt="shape">
+                        </div>
                     </div>
 
                     <!-- item  -->
-                    <div
-                        class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
+                    <div class="item my-auto">
 
-                        <div class="px-8 flex flex-col gap-4 items-center justify-center">
-                            <div class="flex flex-col gap-4 items-center justify-center">
-                                <div class="relative">
-                                    <img src="assets/images/ser-2.png" width="64" height="64" alt="service">
-                                    <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
-                                        width="24" height="24" alt="service shape">
+                        <div
+                            class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
+                            <div class="px-8 flex flex-col gap-4 items-center justify-center">
+                                <div class="flex flex-col gap-4 items-center justify-center">
+                                    <div class="relative">
+                                        <img src="assets/images/ser-3.png" width="64" height="64" alt="service">
+                                        <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
+                                            width="24" height="24" alt="service shape">
+                                    </div>
+                                    <div class=" flex flex-col items-center">
+                                        <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Ellen Brown</h3>
+                                        <p class="text-base text-[#717F7A] leading-6">Cambridgeshire</p>
+                                    </div>
                                 </div>
-                                <div class=" flex flex-col items-center">
-                                    <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Gregory Larkin</h3>
-                                    <p class="text-base text-[#717F7A] leading-6">Cambridgeshire</p>
-                                </div>
+                                <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
+                                    Deserunt aut debitis. Et et alias asperiores voluptatem magni voluptas possimus
+                                    porro
+                                    natus. Quod sunt possimus qui quisquam et at quibusdam et qui. Harum quam porro
+                                    voluptas. Vitae minus quia vero est.
+                                </p>
                             </div>
-                            <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
-                                Qui vero nemo voluptatem voluptatem et molestiae eius. Doloribus animi sunt consequatur
-                                voluptas qui. Mollitia et et enim iste a architecto qui et commodi. Nesciunt non
-                                doloremque enim fugit occaecati. Quidem ut vero. Similique natus suscipit vel
-                                consectetur commodi similique et.
-                            </p>
+                            <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
+                                alt="shape">
                         </div>
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
-                            alt="shape">
-                    </div>
-
-                    <!-- item  -->
-                    <div
-                        class="flex flex-col gap-8 bg-white overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:bg-[#20C7AB]">
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full" alt="shape">
-                        <div class="px-8 flex flex-col gap-4 items-center justify-center">
-                            <div class="flex flex-col gap-4 items-center justify-center">
-                                <div class="relative">
-                                    <img src="assets/images/ser-3.png" width="64" height="64" alt="service">
-                                    <img src="assets/images/ser-img-shape.png" class="absolute -bottom-0.5 -right-4"
-                                        width="24" height="24" alt="service shape">
-                                </div>
-                                <div class=" flex flex-col items-center">
-                                    <h3 class="text-[32px] text-[#1A352B] leading-10 font-semibold">Ellen Brown</h3>
-                                    <p class="text-base text-[#717F7A] leading-6">Cambridgeshire</p>
-                                </div>
-                            </div>
-                            <p class="text-base text-[#1A352B] leading-6 text-center font-medium">
-                                Deserunt aut debitis. Et et alias asperiores voluptatem magni voluptas possimus porro
-                                natus. Quod sunt possimus qui quisquam et at quibusdam et qui. Harum quam porro
-                                voluptas. Vitae minus quia vero est.
-                            </p>
-                        </div>
-                        <img src="assets/images/ser-shape.svg" width="369" height="32" class="w-full rotate-180"
-                            alt="shape">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- rooms section  -->
-        <section class="py-32 overflow-hidden">
-            <div class="container flex flex-col gap-[50px]">
+        <section class="py-32 overflow-hidden px-8 lg:px-0">
+            <div class="container flex flex-col gap-4 lg:gap-[50px]">
                 <header class="flex justify-between items-center">
-                    <h2 class="text-5xl text-black leading-[60px]font-medium">
+                    <h2 class="text-[32px] lg:text-5xl text-black leading-[60px]font-medium">
                         Our Rooms
                     </h2>
                     <a href="#"
-                        class="flex items-center gap-2 text-base text-[#20C7AB] leading-6 border border-[#20C7AB] rounded-lg py-3.5 px-8">
+                        class="flex items-center gap-2 text-base text-[#20C7AB] leading-6 lg:border border-[#20C7AB] rounded-lg lg:py-3.5 lg:px-8">
                         View all
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -254,12 +267,12 @@
                         </svg>
                     </a>
                 </header>
-                <div class="flex flex-col gap-9">
+                <div class="flex flex-col gap-8 lg:gap-9">
                     <div class="owl-carousel owl-theme rooms-carousel">
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -278,20 +291,20 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -310,20 +323,20 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -342,20 +355,20 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -374,20 +387,20 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -406,20 +419,20 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
                         <!-- room item  -->
                         <div class="item flex flex-col gap-[30px]">
-                            <div class="w-[370px] h-[390px] rounded-[15px] overflow-hidden relative group">
+                            <div class="lg:w-[370px] lg:h-[390px] rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
@@ -438,23 +451,23 @@
                             </div>
                             <div class="flex flex-col gap-6">
                                 <div class="flex flex-col gap-2">
-                                    <h3 class="text-2xl leading-8 text-black font-medium">
+                                    <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
                                             Superior Suite with Sea View
                                         </a>
                                     </h3>
-                                    <p class="text-base text-[#717F7A] leading-6">4 people - 70 m2</p>
+                                    <p class="text-sm lg:text-base text-[#717F7A] leading-5 lg:leading-6">4 people - 70 m2</p>
                                 </div>
-                                <span class="text-2xl leading-8 text-black font-medium">$120.00</span>
+                                <span class="text-xl lg:text-2xl leading-8 text-black font-medium">$120.00</span>
                             </div>
                         </div>
 
 
                     </div>
 
-                    <div class="flex items-center gap-[18px] justify-end">
+                    <div class="flex items-center gap-[18px] justify-center lg:justify-end">
                         <button title="owlnav" type="button"
-                            class="prevBtn group py-5 px-8 bg-[#DCDCDC] hover:bg-[#20C7AB] transition-all duration-300 rounded-lg">
+                            class="prevBtn group px-6 py-3 lg:py-5 lg:px-8 bg-[#DCDCDC] hover:bg-[#20C7AB] transition-all duration-300 rounded-lg">
                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="group-hover:stroke-black"
@@ -465,7 +478,7 @@
 
                         </button>
                         <button title="owlnav" type="button"
-                            class="nxtBtn group py-5 px-8 bg-[#DCDCDC] hover:bg-[#20C7AB] transition-all duration-300 rounded-lg">
+                            class="nxtBtn group px-6 py-3 lg:py-5 lg:px-8 bg-[#DCDCDC] hover:bg-[#20C7AB] transition-all duration-300 rounded-lg">
                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path class="group-hover:stroke-black"
@@ -486,8 +499,8 @@
                 <h2 class="text-[70px] text-black leading-[76px] text-center mx-auto lg:w-[706px]">
                     Benefit from our offers for a lovelier stay
                 </h2>
-                <div class="grid grid-cols-2 gap-[30px]">
-                    <div class="col-span-2 h-[413px] rounded-[15px] overflow-hidden relative group">
+                <div class="grid lg:grid-cols-2 gap-[30px]">
+                    <div class="lg:col-span-2 h-[413px] rounded-[15px] overflow-hidden relative group">
                         <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
                         <a href="room.html"
                             class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -503,7 +516,7 @@
                         </a>
                         <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
                             <span class="text-base text-[#F5F5F5] leading-6 font-medium">NON REFUNDABLE</span>
-                            <h3 class="text-[30px] text-[#F5F5F5] leading-10 font-medium">10% Discount</h3>
+                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">10% Discount</h3>
                         </div>
                         <img src="assets/images/offers-1.jpg" class="w-full h-full object-cover" width="1170"
                             height="413" alt="offer">
@@ -525,7 +538,7 @@
                         </a>
                         <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
                             <span class="text-base text-[#F5F5F5] leading-6 font-medium">FREE BREAKFAST</span>
-                            <h3 class="text-[30px] text-[#F5F5F5] leading-10 font-medium">The View Suite Reservation
+                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">The View Suite Reservation
                             </h3>
                         </div>
                         <img src="assets/images/offers-2.jpg" class="w-full h-full object-cover" width="570"
@@ -548,7 +561,7 @@
                         </a>
                         <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
                             <span class="text-base text-[#F5F5F5] leading-6 font-medium">15% DUSCOUNT PROMOTION</span>
-                            <h3 class="text-[30px] text-[#F5F5F5] leading-10 font-medium">Couple’s Spa Day</h3>
+                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">Couple’s Spa Day</h3>
                         </div>
                         <img src="assets/images/offers-3.jpg" class="w-full h-full object-cover" width="570"
                             height="413" alt="offer">
@@ -626,7 +639,7 @@
 
         <!-- map section  -->
         <section class="py-32 overflow-hidden">
-            <div class="container flex flex-col gap-[50px]">
+            <div class="container flex flex-col gap-4 lg:gap-[50px]">
                 <header class="flex justify-between items-end">
                     <div class="flex flex-col gap-[15px]">
                         <span class="text-base text-[#717F7A] leading-6 font-medium">
@@ -689,8 +702,8 @@
 
             <div class="container flex justify-center">
                 <div
-                    class="border border-[#6F6F6F] rounded-2xl p-[15px] bg-[#FFFFFF1F] backdrop:blur-[20px] flex gap-[15px]">
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    class="border border-[#6F6F6F] rounded-2xl p-[15px] bg-[#FFFFFF1F] backdrop:blur-[20px] flex flex-col lg:flex-row gap-[15px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check in</p>
                         <div class="flex items-center justify-between">
                             <input title="from" autocomplete="off"
@@ -700,7 +713,7 @@
                         </div>
                     </div>
 
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Check out</p>
                         <div class="flex items-center justify-between">
                             <input title="to" autocomplete="off"
@@ -711,7 +724,7 @@
                         </div>
                     </div>
 
-                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 w-[170px]">
+                    <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
                         <div class="flex items-center justify-between counter">
                             <span class="counter-num text-white text-base leading-6">01</span>
@@ -753,9 +766,9 @@
                 <a href="index.html" class="">
                     <img src="assets/images/logo.svg" width="118" height="96" alt="Bedouin Logo">
                 </a>
-                <div class="w-full grid grid-cols-4 gap-8">
+                <div class="w-full px-8 lg:px-0 grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 lg:gap-8">
 
-                    <div class="flex flex-col gap-4">
+                    <div class="col-span-1 flex flex-col gap-4">
                         <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Navigate</h2>
                         <ul class="flex flex-col gap-2">
                             <li>
@@ -776,7 +789,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="col-span-1 flex flex-col gap-4">
                         <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Need help?</h2>
                         <ul class="flex flex-col gap-2">
                             <li>
@@ -791,7 +804,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
                         <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Social</h2>
                         <ul class="flex flex-col gap-2">
                             <li>
@@ -803,7 +816,7 @@
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-5 col-span-2 lg:col-span-1">
                         <div class="flex items-start gap-4">
                             <img src="assets/images/call.svg" width="24" height="24" alt="call">
                             <p class="text-base text-[#F5F5F580] leading-5">+20 69 3640695</p>
@@ -823,13 +836,14 @@
                     </div>
 
                 </div>
-                <div class="flex items-center gap-16">
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Styleguide</a>
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Terms & Conditions</a>
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Licensing</a>
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Start Here</a>
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Changelog</a>
-                    <a href="#" class="text-base text-[#F5F5F580] leading-5">Support</a>
+                <div class="flex items-center px-8 lg:px-0 flex-wrap gap-x-[55px] gap-y-5 lg:gap-16">
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Styleguide</a>
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Terms &
+                        Conditions</a>
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Licensing</a>
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Start Here</a>
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Changelog</a>
+                    <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Support</a>
                 </div>
 
             </div>

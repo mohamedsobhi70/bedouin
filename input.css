@@ -9,8 +9,11 @@
   background: #20c7ab;
   padding: 20px 32px !important;
 }
-.lightbox.open{
-  display:flex;
+.lightbox.open {
+  display: flex;
+}
+.owl-carousel .owl-stage {
+  @apply flex items-center;
 }
 @layer base {
   @font-face {

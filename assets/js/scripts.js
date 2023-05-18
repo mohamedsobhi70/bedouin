@@ -25,22 +25,59 @@ if ($(".gallery").length > 0) {
 }
 // *********************************************
 
-//rooms carousel
-if ($(".rooms-carousel").length > 0) {
+// testimonials carousel
+if ($(".testimonials-carousel").length > 0) {
 
-    $('.rooms-carousel').owlCarousel({
+    $('.testimonials-carousel').owlCarousel({
         loop: false,
-        margin: 30,
+        center: true,
         nav: false,
         dots: false,
         responsive: {
             0: {
-                items: 1
+                margin: 16,
+                items: 1.15
             },
             600: {
                 items: 2
             },
             1000: {
+                margin: 32,
+                items: 3
+
+            }
+        }
+    });
+    $('.testimonials-carousel').trigger("to.owl.carousel", [1, 1])
+    // Go to the next item
+    $('.nxtBtn').click(function () {
+        $('.testimonials-carousel').trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.prevBtn').click(function () {
+        $('.testimonials-carousel').trigger('prev.owl.carousel');
+    })
+}
+// *********************************************
+
+//rooms carousel
+if ($(".rooms-carousel").length > 0) {
+
+    $('.rooms-carousel').owlCarousel({
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                margin: 24,
+                items: 1.4,
+                loop: true,
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                loop: false,
+                margin: 30,
                 items: 3
             }
         }
@@ -135,7 +172,7 @@ if ($(".lightbox").length > 0) {
         totalgalleryItems = galleryItems.length, // length of the item
         lightbox = document.querySelector(".lightbox"),
         lightboxImg = lightbox.querySelector(".lightbox-img");
-        let itemIndex = 0;
+    let itemIndex = 0;
 
     for (let i = 0; i < totalgalleryItems; i++) {
         galleryItems[i].addEventListener("click", function () {
