@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Bedouin Moon</title>
-    <link rel="stylesheet" href="assets/css/datarange.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="font-Recoleta">
+
     <!-- Bedouin Header  -->
-    <header class="pt-5 pb-7 border-b border-[#C4CBCB]">
-        <div class="container flex items-center justify-between">
-            <div class="w-[201px]">
-                <button type="button" title="menu">
+    <header class="w-full  lg:pt-5 lg:pb-7  lg:border-b border-[#C4CBCB]">
+        <div class="container flex items-center justify-between py-6 px-8 lg:p-0">
+            <div class="lg:w-[201px]">
+                <button type="button" title="menu" class="bedouin-menu-btn">
                     <img src="assets/images/menu-dark.svg" class="" width="21" height="24" alt="menu">
                 </button>
             </div>
 
             <a href="index.html" class="logo" title="Bedouin">
-                <img src="assets/images/logo-dark.svg" width="118" height="96" alt="Bedouin Logo">
+                <img src="assets/images/logo-dark.svg" class="w-[76px] h-[62px] lg:w-[118px] lg:h-[96px] " width="118"
+                    height="96" alt="Bedouin Logo">
             </a>
 
-            <a href="#" class="text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
+            <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
                 Reserve Your Room
             </a>
         </div>
@@ -33,7 +34,8 @@
 
     <!-- Bedouin Main Page Content  -->
     <main>
-        <div class="container py-12">
+        <div class="container py-8 lg:py-12">
+            <h2 class="text-[32px] text-[#002421E5] leading-10 font-medium">Two-Bedroom Apartment</h2>
             <div class=" grid grid-cols-4 grid-rows-2 gap-5 rounded-xl overflow-hidden">
                 <div class="col-span-2 row-span-2">
                     <img src="assets/images/room-1.jpg" class="w-full h-full object-cover" width="581" height="500"
@@ -534,6 +536,137 @@
 
         </section>
 
+        <!-- Bedouin Menu  -->
+        <div class="fixed w-full opacity-0 invisible transition-all duration-300 h-full left-0 top-0 z-50 bedouin-menu">
+
+            <div class="bg-black h-full flex flex-col gap-16">
+
+                <div class="w-[1440px] lg:w-full">
+                    <img src="assets/images/footer-3.svg" class="lg:w-full" width="1440" height="68" alt="footer shape">
+                </div>
+
+                <div
+                    class="bedouin-menu-content overflow-y-scroll lg:overflow-y-visible translate-y-56 transition-all duration-300 ease-in-out h-full flex flex-col items-center ">
+                    <div class="container flex flex-col gap-16 items-center my-auto">
+                        <div
+                            class="bg-black flex justify-between lg:justify-center w-full px-8 lg:px-0 sticky lg:static top-0">
+                            <button type="button" title="close menu"
+                                class="bedouin-menu-close lg:absolute lg:top-28 lg:left-28">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 15L24.9706 31.9706" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M7.51562 31.4505L24.4862 14.4799" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <a href="index.html" class="">
+                                <img src="assets/images/logo.svg" class="w-[76px] h-[62px] lg:w-[118px] lg:h-[96px]"
+                                    width="118" height="96" alt="Bedouin Logo">
+                            </a>
+
+                        </div>
+
+                        <div
+                            class="w-full h-full px-8 lg:px-0 grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 lg:gap-8">
+
+                            <div class="col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Navigate</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Our Hotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Rooms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">The Spa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Gastronomy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Experiences</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Need help?</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Offers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Social</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Facebook</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-col gap-5 col-span-2 lg:col-span-1">
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/call.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">+20 69 3640695</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/sms.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">sales@thebedouinmoon.com</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/location.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">Mashraba, South Sinai, Dahab, Egypt
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/map.svg" width="24" height="24" alt="call">
+                                    <a href="#" class="text-base text-[#F5F5F580] leading-5">View Map</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center px-8 lg:px-0 flex-wrap gap-x-[55px] gap-y-5 lg:gap-16">
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Styleguide</a>
+                            <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Terms
+                                &
+                                Conditions</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Licensing</a>
+                            <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Start
+                                Here</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Changelog</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Support</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-[1440px] lg:w-full">
+                    <img src="assets/images/footer-3.svg" width="1440" height="68" class="rotate-180 lg:w-full"
+                        alt="footer shape">
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <!-- Bedouin Footer  -->
@@ -696,7 +829,6 @@
     </footer>
 
     <script src="assets/js/jquiry.js"></script>
-    <script src="assets/js/jquiry-ui.js"></script>
     <script src="assets/js/scripts.js"></script>
 </body>
 

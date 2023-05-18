@@ -9,24 +9,24 @@
     <title>Bedouin Moon</title>
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <link rel="stylesheet" href="assets/css/owl.theme.default.css">
-    <link rel="stylesheet" href="assets/css/datarange.css">
-
+    <!-- <link rel="stylesheet" href="assets/css/datarange.css"> -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body class="font-Recoleta">
     <!-- Bedouin Header  -->
-    <header class="absolute w-full top-0 LG:top-5 z-30">
+    <header class="absolute w-full top-0 lg:top-5 z-30">
         <div class="container flex items-center justify-between py-6 px-8 lg:p-0">
             <div class="lg:w-[201px]">
-                <button type="button" title="menu">
+                <button type="button" title="menu" class="bedouin-menu-btn">
                     <img src="assets/images/menu.svg" class="" width="21" height="24" alt="menu">
                 </button>
             </div>
 
             <a href="index.html" class="logo" title="Bedouin">
-                <img src="assets/images/logo.svg" width="118" height="96" alt="Bedouin Logo">
+                <img src="assets/images/logo.svg" class="w-[76px] h-[62px] lg:w-[118px] lg:h-[96px] " width="118"
+                    height="96" alt="Bedouin Logo">
             </a>
 
             <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
@@ -41,10 +41,10 @@
         <section
             class="relative h-screen lg:h-auto min-h-[779px] bg-[url(../images/hero.jpg)] bg-cover bg-bottom flex items-center justify-center">
             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#00000066] to-[#00000066]"></div>
-            <div class="relative container flex flex-col gap-10 items-center px-8 lg:px-0">
+            <div class="relative container flex flex-col gap-10 items-center px-8 lg:px-0 py-8">
                 <div class="flex flex-col gap-4 items-center">
                     <h1
-                        class="text-[32px] lg:text-[70px] text-white leading-9 text-center lg:leading-[76px] font-medium">
+                        class="-mx-2.5 lg:mx-0 text-[32px] lg:text-[70px] text-white leading-9 text-center lg:leading-[76px] font-medium">
                         Unique Diving Experiences
                     </h1>
                     <p class="text-xl text-white leading-[30px] text-center">
@@ -58,7 +58,7 @@
                         <div class="flex items-center justify-between">
                             <input title="from" autocomplete="off"
                                 class="from w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
-                                type="text" id="from" name="from" placeholder="-- / -- / --">
+                                type="text" id="check-in" name="check-in" placeholder="-- / -- / --">
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="flex items-center justify-between">
                             <input title="to" autocomplete="off"
                                 class="to w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
-                                type="text" id="to" name="to" placeholder="-- / -- / --">
+                                type="text" id="check-out" name="check-out" placeholder="-- / -- / --">
 
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
@@ -115,32 +115,35 @@
                     class="text-[32px] lg:text-[70px] text-black leading-[48px] lg:leading-[76px] text-center max-w-[500px] mx-auto">
                     Unique views all year round.
                 </h2>
-                <div class="grid grid-cols-4 grid-rows-3 gap-5">
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-2 row-span-1">
+                <div class="grid grid-cols-3 lg:grid-cols-4 grid-rows-3 gap-3.5 lg:gap-5">
+                    <div class="rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-2 row-span-1">
                         <img src="assets/images/gallery-1.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="560" height="232" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
+                    <div class="rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
                         <img src="assets/images/gallery-2.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="270" height="466" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
+                    <div
+                        class="hidden lg:block rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
                         <img src="assets/images/gallery-3.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="270" height="223" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
+                    <div class="rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-2">
                         <img src="assets/images/gallery-4.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="270" height="510" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
+                    <div class="rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
                         <img src="assets/images/gallery-5.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="270" height="214" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
+                    <div
+                        class="hidden lg:block  rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-1 row-span-1">
                         <img src="assets/images/gallery-6.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="270" height="223" alt="gallery">
                     </div>
-                    <div class="rounded-[10px] gallery-item overflow-hidden col-span-3 row-span-1">
+                    <div
+                        class="rounded-[4px] lg:rounded-[10px] gallery-item overflow-hidden col-span-2 lg:col-span-3 row-span-1">
                         <img src="assets/images/gallery-7.jpg" class="cursor-pointer w-full h-full object-cover"
                             width="850" height="277" alt="gallery">
                     </div>
@@ -314,11 +317,11 @@
                         </svg>
                     </a>
                 </header>
-                <div class="flex flex-col gap-8 lg:gap-9 rooms">
+                <div class="flex flex-col gap-4 lg:gap-9 rooms">
                     <div class="owl-carousel owl-theme rooms-carousel">
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -336,7 +339,7 @@
                                 <img src="assets/images/rooms-1.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -351,7 +354,7 @@
                         </div>
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -369,7 +372,7 @@
                                 <img src="assets/images/rooms-2.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -384,7 +387,7 @@
                         </div>
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -402,7 +405,7 @@
                                 <img src="assets/images/rooms-3.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -417,7 +420,7 @@
                         </div>
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -435,7 +438,7 @@
                                 <img src="assets/images/rooms-1.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -450,7 +453,7 @@
                         </div>
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -468,7 +471,7 @@
                                 <img src="assets/images/rooms-2.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -483,7 +486,7 @@
                         </div>
 
                         <!-- room item  -->
-                        <div class="item flex flex-col gap-[30px]">
+                        <div class="item flex flex-col lg:gap-[30px]">
                             <div class=" rounded-[15px] overflow-hidden relative group">
                                 <a href="room.html"
                                     class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -501,7 +504,7 @@
                                 <img src="assets/images/rooms-3.jpg" class="w-full h-full object-cover" width="370"
                                     height="390" alt="room">
                             </div>
-                            <div class="flex flex-col gap-2 lg:gap-6">
+                            <div class="flex flex-col gap-2 lg:gap-6 py-4 lg:py-0">
                                 <div class="flex flex-col gap-2">
                                     <h3 class="text-base lg:text-2xl leading-6 lg:leading-8 text-black font-medium">
                                         <a href="room.html" class="">
@@ -553,73 +556,84 @@
                     class="text-[32px] lg:text-[70px] text-black leading-[48px] lg:leading-[76px] text-center mx-auto lg:w-[706px]">
                     Benefit from our offers for a lovelier stay
                 </h2>
-                <div class="grid lg:grid-cols-2 gap-[30px]">
-                    <div class="lg:col-span-2 h-[413px] rounded-[15px] overflow-hidden relative group">
-                        <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
-                        <a href="room.html"
-                            class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
-                                height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
-                                    fill="#20C7AB" />
-                            </svg>
-                            <span class="relative text-[32px] leading-8 text-black text-center">
-                                Book Now
-                            </span>
-                        </a>
-                        <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
-                            <span class="text-base text-[#F5F5F5] leading-6 font-medium">NON REFUNDABLE</span>
-                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">10% Discount</h3>
+                <div class="flex flex-col gap-[22px]">
+                    <div class="grid lg:grid-cols-2 gap-[30px]">
+                        <div class="lg:col-span-2 h-[413px] rounded-[15px] overflow-hidden relative group">
+                            <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
+                            <a href="room.html"
+                                class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
+                                    height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
+                                        fill="#20C7AB" />
+                                </svg>
+                                <span class="relative text-[32px] leading-8 text-black text-center">
+                                    Book Now
+                                </span>
+                            </a>
+                            <div class="absolute bottom-8 left-8 lg:bottom-6 lg:left-10 flex flex-col gap-[5px]">
+                                <span class="text-sm lg:text-base text-[#F5F5F5] leading-6 font-medium">NON
+                                    REFUNDABLE</span>
+                                <h3 class="text-2xl lg:text-3xl text-[#F5F5F5] leading-10 font-medium">10% Discount</h3>
+                            </div>
+                            <img src="assets/images/offers-1.jpg" class="w-full h-full object-cover" width="1170"
+                                height="413" alt="offer">
                         </div>
-                        <img src="assets/images/offers-1.jpg" class="w-full h-full object-cover" width="1170"
-                            height="413" alt="offer">
-                    </div>
 
-                    <div class="h-[413px] rounded-[15px] overflow-hidden relative group">
-                        <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
-                        <a href="room.html"
-                            class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
-                                height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
-                                    fill="#20C7AB" />
-                            </svg>
-                            <span class="relative text-[32px] leading-8 text-black text-center">
-                                Book Now
-                            </span>
-                        </a>
-                        <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
-                            <span class="text-base text-[#F5F5F5] leading-6 font-medium">FREE BREAKFAST</span>
-                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">The View Suite Reservation
-                            </h3>
+                        <div class="h-[413px] rounded-[15px] overflow-hidden relative group">
+                            <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
+                            <a href="room.html"
+                                class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
+                                    height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
+                                        fill="#20C7AB" />
+                                </svg>
+                                <span class="relative text-[32px] leading-8 text-black text-center">
+                                    Book Now
+                                </span>
+                            </a>
+                            <div class="absolute bottom-8 left-8 lg:bottom-6 lg:left-10 flex flex-col gap-[5px]">
+                                <span class="text-sm lg:text-base text-[#F5F5F5] leading-6 font-medium">FREE
+                                    BREAKFAST</span>
+                                <h3 class="text-2xl lg:text-3xl text-[#F5F5F5] leading-10 font-medium">The View Suite
+                                    Reservation
+                                </h3>
+                            </div>
+                            <img src="assets/images/offers-2.jpg" class="w-full h-full object-cover" width="570"
+                                height="413" alt="offer">
                         </div>
-                        <img src="assets/images/offers-2.jpg" class="w-full h-full object-cover" width="570"
-                            height="413" alt="offer">
-                    </div>
 
-                    <div class="h-[413px] rounded-[15px] overflow-hidden relative group">
-                        <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
-                        <a href="room.html"
-                            class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
-                                height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
-                                    fill="#20C7AB" />
-                            </svg>
-                            <span class="relative text-[32px] leading-8 text-black text-center">
-                                Book Now
-                            </span>
-                        </a>
-                        <div class="absolute bottom-6 left-10 flex flex-col gap-[5px]">
-                            <span class="text-base text-[#F5F5F5] leading-6 font-medium">15% DUSCOUNT PROMOTION</span>
-                            <h3 class="text-3xl text-[#F5F5F5] leading-10 font-medium">Couple’s Spa Day</h3>
+                        <div class="h-[413px] rounded-[15px] overflow-hidden relative group">
+                            <div class="absolute w-full h-full top-0 left-0 bg-room-gradient"></div>
+                            <a href="room.html"
+                                class="opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:top-1/2 transition-all duration-300  flex justify-center items-center w-[134px] h-[134px] absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="142"
+                                    height="142" viewBox="0 0 142 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M142 72.9042C142 114.971 106.14 142 65.1716 142C24.2037 142 0 121.5 0 79.433C0 37.3662 27.2191 0 68.1871 0C109.155 0 142 30.8375 142 72.9042Z"
+                                        fill="#20C7AB" />
+                                </svg>
+                                <span class="relative text-[32px] leading-8 text-black text-center">
+                                    Book Now
+                                </span>
+                            </a>
+                            <div class="absolute bottom-8 left-8 lg:bottom-6 lg:left-10 flex flex-col gap-[5px]">
+                                <span class="text-sm lg:text-base text-[#F5F5F5] leading-6 font-medium">15% DUSCOUNT
+                                    PROMOTION</span>
+                                <h3 class="text-2xl lg:text-3xl text-[#F5F5F5] leading-10 font-medium">Couple’s Spa Day
+                                </h3>
+                            </div>
+                            <img src="assets/images/offers-3.jpg" class="w-full h-full object-cover" width="570"
+                                height="413" alt="offer">
                         </div>
-                        <img src="assets/images/offers-3.jpg" class="w-full h-full object-cover" width="570"
-                            height="413" alt="offer">
                     </div>
+                    <a href="room.html"
+                        class="lg:hidden text-black text-center bg-[#20C7AB] text-base leading-6 py-3.5 px-8 rounded-lg">
+                        Book Now
+                    </a>
                 </div>
             </div>
         </section>
@@ -629,9 +643,10 @@
             <div class="container flex flex-col lg:gap-[130px]">
 
                 <!-- item  -->
-                <div class="flex flex-col lg:flex-row gap-[22px] lg:gap-[30px] lg:items-center py-12 lg:py-0 px-8 lg:px-0">
+                <div
+                    class="flex flex-col lg:flex-row gap-[22px] lg:gap-[30px] lg:items-center py-12 lg:py-0 px-8 lg:px-0">
                     <div class="order-1 lg:order-none rounded-[15px] overflow-hidden">
-                        <img src="assets/images/spa-1.jpg" width="572" height="420" alt="spa">
+                        <img src="assets/images/spa-1.jpg" class="w-full" width="572" height="420" alt="spa">
                     </div>
                     <div class=" lg:py-11 lg:px-[60px] flex flex-col gap-1.5 lg:gap-[30px] flex-1">
                         <div class="flex flex-col gap-1.5 lg:gap-3">
@@ -675,7 +690,7 @@
                         </div>
                     </div>
                     <div class="rounded-[15px] overflow-hidden">
-                        <img src="assets/images/spa-2.jpg" width="572" height="420" alt="spa">
+                        <img src="assets/images/spa-2.jpg" class="w-full" width="572" height="420" alt="spa">
                     </div>
                     <a href="#"
                         class="text-base w-full text-center text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB] lg:hidden order-last">View
@@ -683,9 +698,10 @@
                 </div>
 
                 <!-- item  -->
-                <div class="flex flex-col lg:flex-row gap-[22px] lg:gap-[30px] lg:items-center py-12 lg:py-0 px-8 lg:px-0">
+                <div
+                    class="flex flex-col lg:flex-row gap-[22px] lg:gap-[30px] lg:items-center py-12 lg:py-0 px-8 lg:px-0">
                     <div class="order-2 lg:order-none rounded-[15px] overflow-hidden">
-                        <img src="assets/images/spa-3.jpg" width="572" height="420" alt="spa">
+                        <img src="assets/images/spa-3.jpg" class="w-full" width="572" height="420" alt="spa">
                     </div>
                     <div class="lg:py-11 lg:px-[60px] flex flex-col gap-1.5 lg:gap-[30px] flex-1">
                         <div class="flex flex-col gap-1.5 lg:gap-3">
@@ -772,15 +788,142 @@
         </div>
         <!-- lightbox  end-->
 
+        <!-- Bedouin Menu  -->
+        <div class="fixed w-full opacity-0 invisible transition-all duration-300 h-full left-0 top-0 z-50 bedouin-menu">
+
+            <div class="bg-black h-full flex flex-col gap-16">
+
+                <div class="w-[1440px] lg:w-full">
+                    <img src="assets/images/footer-3.svg" class="lg:w-full" width="1440" height="68" alt="footer shape">
+                </div>
+
+                <div class="bedouin-menu-content overflow-y-scroll lg:overflow-y-visible translate-y-56 transition-all duration-300 ease-in-out h-full flex flex-col items-center ">
+                    <div class="container flex flex-col gap-16 items-center my-auto">
+                        <div class="bg-black flex justify-between lg:justify-center w-full px-8 lg:px-0 sticky lg:static top-0">
+                            <button type="button" title="close menu" class="bedouin-menu-close lg:absolute lg:top-28 lg:left-28">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 15L24.9706 31.9706" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <path d="M7.51562 31.4505L24.4862 14.4799" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <a href="index.html" class="">
+                                <img src="assets/images/logo.svg" class="w-[76px] h-[62px] lg:w-[118px] lg:h-[96px]" width="118" height="96" alt="Bedouin Logo">
+                            </a>
+
+                        </div>
+
+                        <div class="w-full h-full px-8 lg:px-0 grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 lg:gap-8">
+
+                            <div class="col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Navigate</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Our Hotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Rooms</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">The Spa</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Gastronomy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Experiences</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Need help?</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Offers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-span-2 lg:col-span-1 flex flex-col gap-4">
+                                <h2 class="text-base text-[#F5F5F5E5] leading-5 font-medium">Social</h2>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Instagram</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-base text-[#F5F5F580] leading-5">Facebook</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="flex flex-col gap-5 col-span-2 lg:col-span-1">
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/call.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">+20 69 3640695</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/sms.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">sales@thebedouinmoon.com</p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/location.svg" width="24" height="24" alt="call">
+                                    <p class="text-base text-[#F5F5F580] leading-5">Mashraba, South Sinai, Dahab, Egypt
+                                    </p>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <img src="assets/images/map.svg" width="24" height="24" alt="call">
+                                    <a href="#" class="text-base text-[#F5F5F580] leading-5">View Map</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center px-8 lg:px-0 flex-wrap gap-x-[55px] gap-y-5 lg:gap-16">
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Styleguide</a>
+                            <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Terms
+                                &
+                                Conditions</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Licensing</a>
+                            <a href="#" class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Start
+                                Here</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Changelog</a>
+                            <a href="#"
+                                class="text-sm lg:text-base text-[#F5F5F580] leading-[18px] lg:leading-5">Support</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-[1440px] lg:w-full">
+                    <img src="assets/images/footer-3.svg" width="1440" height="68" class="rotate-180 lg:w-full"
+                        alt="footer shape">
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
 
     <!-- Bedouin Footer  -->
     <footer class=" overflow-hidden">
         <div class="bg-[#00332F] flex flex-col gap-12">
-            <div class="w-[1440px]">
-                <img src="assets/images/footer-1.svg" width="1440" height="68" alt="footer shape">
+            <div class="w-[1440px] lg:w-full">
+                <img src="assets/images/footer-1.svg" class="lg:w-full" width="1440" height="68" alt="footer shape">
             </div>
-
 
             <div class="container flex justify-center px-8 lg:px-0">
                 <div
@@ -789,8 +932,8 @@
                         <p class="text-lg text-white leading-6 font-medium">Check in</p>
                         <div class="flex items-center justify-between">
                             <input title="from" autocomplete="off"
-                                class="from-1 w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
-                                type="text" id="from-1" name="from-1" placeholder="-- / -- / --">
+                                class="w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="footer-check-in" name="footer-check-in" placeholder="-- / -- / --">
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
                     </div>
@@ -799,8 +942,8 @@
                         <p class="text-lg text-white leading-6 font-medium">Check out</p>
                         <div class="flex items-center justify-between">
                             <input title="to" autocomplete="off"
-                                class="to-1 w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
-                                type="text" id="to-1" name="to-1" placeholder="-- / -- / --">
+                                class="w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
+                                type="text" id="footer-check-out" name="footer-check-out" placeholder="-- / -- / --">
 
                             <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
@@ -838,14 +981,16 @@
                     </a>
                 </div>
             </div>
-            <div class="w-[1440px]">
-                <img src="assets/images/footer-2.svg" width="1440" height="68" alt="footer shape">
+
+            <div class="w-[1440px] lg:w-full">
+                <img src="assets/images/footer-2.svg" class="lg:w-full" width="1440" height="68" alt="footer shape">
             </div>
 
         </div>
         <div class="bg-black flex flex-col gap-16">
-            <div class="w-[1440px]">
-                <img src="assets/images/footer-3.svg" width="1440" height="68" alt="footer shape">
+
+            <div class="w-[1440px] lg:w-full">
+                <img src="assets/images/footer-3.svg" class="lg:w-full" width="1440" height="68" alt="footer shape">
             </div>
 
             <div class="container flex flex-col gap-16 items-center">
@@ -933,17 +1078,42 @@
                 </div>
 
             </div>
-            <div class="w-[1440px]">
-                <img src="assets/images/footer-3.svg" width="1440" height="68" class="rotate-180" alt="footer shape">
+
+            <div class="w-[1440px] lg:w-full">
+                <img src="assets/images/footer-3.svg" width="1440" height="68" class="rotate-180 lg:w-full"
+                    alt="footer shape">
             </div>
         </div>
 
     </footer>
 
+
+
     <script src="assets/js/jquiry.js"></script>
-    <script src="assets/js/jquiry-ui.js"></script>
+    <!-- <script src="assets/js/jquiry-ui.js"></script> -->
     <script src="assets/js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script>
+        new Litepicker({
+            element: document.getElementById('check-in'),
+            singleMode: false,
+        })
+
+        // const checkin = new Litepicker({
+        //     element: document.getElementById('check-in')
+        // });
+        const checkout = new Litepicker({
+            element: document.getElementById('check-out')
+        });
+        const footercheckin = new Litepicker({
+            element: document.getElementById('footer-check-in')
+        });
+        const footercheckout = new Litepicker({
+            element: document.getElementById('footer-check-out')
+        });
+    </script>
 </body>
 
 </html>

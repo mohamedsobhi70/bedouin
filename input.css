@@ -16,6 +16,12 @@
 .owl-carousel .owl-stage {
   @apply flex items-center;
 }
+.bedouin-menu.active {
+  @apply visible opacity-100;
+}
+.bedouin-menu.active .bedouin-menu-content{
+  @apply  translate-y-0;
+}
 
 @layer base {
   @font-face {

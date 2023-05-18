@@ -1,3 +1,11 @@
+// menu 
+$(".bedouin-menu-btn").on("click",function(){
+    $(".bedouin-menu").addClass("active")
+})
+$(".bedouin-menu-close").on("click",function(){
+    $(".bedouin-menu").removeClass("active")
+})
+
 // counter 
 if ($(".counter").length > 0) {
     $(".counter").each(function () {
@@ -93,79 +101,6 @@ if ($(".rooms-carousel").length > 0) {
     $('.rooms .prevBtn').click(function () {
         $('.rooms-carousel').trigger('prev.owl.carousel');
     })
-}
-// *********************************************
-
-//check in and chekout date
-if ($(".from").length > 0) {
-    $(function () {
-        let dateFormat = "dd/mm/yy",
-            from = $(".from")
-                .datepicker({
-                    defaultDate: "+1w",
-                    changeMonth: true,
-                    changeYear: true,
-                })
-                .on("change", function () {
-                    to.datepicker("option", "minDate", getDate(this));
-                }),
-            to = $(".to").datepicker({
-                defaultDate: "+1w",
-                changeMonth: true,
-                changeYear: true,
-            })
-                .on("change", function () {
-                    from.datepicker("option", "maxDate", getDate(this));
-                });
-
-        function getDate(element) {
-            let date;
-            try {
-                date = $.datepicker.parseDate(dateFormat, element.value);
-            } catch (error) {
-                date = null;
-            }
-
-            return date;
-        }
-    });
-
-}
-// *********************************************
-
-//footer in and chekout date
-if ($(".from-1").length > 0) {
-    $(function () {
-        let dateFormat = "dd/mm/yy",
-            from = $(".from-1")
-                .datepicker({
-                    defaultDate: "+1w",
-                    changeMonth: true,
-                    changeYear: true,
-                })
-                .on("change", function () {
-                    to.datepicker("option", "minDate", getDate(this));
-                }),
-            to = $(".to-1").datepicker({
-                defaultDate: "+1w",
-                changeMonth: true,
-                changeYear: true,
-            })
-                .on("change", function () {
-                    from.datepicker("option", "maxDate", getDate(this));
-                });
-
-        function getDate(element) {
-            let date;
-            try {
-                date = $.datepicker.parseDate(dateFormat, element.value);
-            } catch (error) {
-                date = null;
-            }
-            return date;
-        }
-    });
-
 }
 // *********************************************
 
