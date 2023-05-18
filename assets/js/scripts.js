@@ -29,7 +29,7 @@ if ($(".gallery").length > 0) {
 if ($(".testimonials-carousel").length > 0) {
 
     $('.testimonials-carousel').owlCarousel({
-        loop: false,
+        loop: true,
         center: true,
         nav: false,
         dots: false,
@@ -39,6 +39,7 @@ if ($(".testimonials-carousel").length > 0) {
                 items: 1.15
             },
             600: {
+                margin: 16,
                 items: 2
             },
             1000: {
@@ -50,11 +51,11 @@ if ($(".testimonials-carousel").length > 0) {
     });
     $('.testimonials-carousel').trigger("to.owl.carousel", [1, 1])
     // Go to the next item
-    $('.nxtBtn').click(function () {
+    $('.testimonials  .nxtBtn').click(function () {
         $('.testimonials-carousel').trigger('next.owl.carousel');
     })
     // Go to the previous item
-    $('.prevBtn').click(function () {
+    $('.testimonials .prevBtn').click(function () {
         $('.testimonials-carousel').trigger('prev.owl.carousel');
     })
 }
@@ -73,6 +74,8 @@ if ($(".rooms-carousel").length > 0) {
                 loop: true,
             },
             600: {
+                margin: 24,
+                loop: true,
                 items: 2
             },
             1000: {
@@ -83,11 +86,11 @@ if ($(".rooms-carousel").length > 0) {
         }
     });
     // Go to the next item
-    $('.nxtBtn').click(function () {
+    $('.rooms .nxtBtn').click(function () {
         $('.rooms-carousel').trigger('next.owl.carousel');
     })
     // Go to the previous item
-    $('.prevBtn').click(function () {
+    $('.rooms .prevBtn').click(function () {
         $('.rooms-carousel').trigger('prev.owl.carousel');
     })
 }

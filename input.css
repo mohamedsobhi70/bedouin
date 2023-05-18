@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .owl-carousel .owl-stage-outer {
   overflow: visible;
 }
@@ -15,6 +16,7 @@
 .owl-carousel .owl-stage {
   @apply flex items-center;
 }
+
 @layer base {
   @font-face {
     font-family: Recoleta;
