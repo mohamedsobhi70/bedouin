@@ -26,7 +26,7 @@
                     height="96" alt="Bedouin Logo">
             </a>
 
-            <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB]">
+            <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB] transition-all duration-300 hover:bg-[#00AE91] hover:text-white">
                 Reserve Your Room
             </a>
         </div>
@@ -72,7 +72,8 @@
                         too if you wish) are served.
                     </p>
                 </div>
-                <div class="flex flex-col gap-4 overflow-auto lg:overflow-y-visible drag-section lg:cursor-auto cursor-grab px-8 lg:px-0">
+                <div
+                    class="flex flex-col gap-4 overflow-auto lg:overflow-y-visible drag-section lg:cursor-auto cursor-grab px-8 lg:px-0">
                     <div class="flex gap-[15px] items-center" draggable="true">
                         <div
                             class="flex gap-2.5 items-center shrink-0 rounded-[5px] border border-[#D8D8D8] py-[18px] px-[25px]">
@@ -461,9 +462,8 @@
                     </div>
 
                     <button type="button"
-                        class="bedouin-details-btn lg:hidden py-3.5 px-8 rounded-lg bg-[#20C7AB] text-black text-base leading-6">See
-                        All
-                        Features</button>
+                        class="bedouin-details-btn lg:hidden py-3.5 px-8 rounded-lg bg-[#20C7AB] text-black text-base leading-6 transition-all duration-300 hover:bg-[#00AE91] hover:text-white">See
+                        All Features</button>
                 </div>
 
                 <div
@@ -1200,17 +1200,17 @@
     <script>
         const checkin = new Litepicker({
             element: document.getElementById('check-in'),
-            format:"DD/MM/YYYY",
-            singleMode:false,
+            format: "DD/MM/YYYY",
+            singleMode: false,
             elementEnd: document.getElementById('check-out'),
         });
         const footercheckin = new Litepicker({
             element: document.getElementById('footer-check-in'),
-            format:"DD/MM/YYYY",
-            singleMode:false,
+            format: "DD/MM/YYYY",
+            singleMode: false,
             elementEnd: document.getElementById('footer-check-out'),
         });
-        
+
         $('.drag-section').scrollLeft('300');
     </script>
 </body>
