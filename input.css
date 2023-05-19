@@ -5,22 +5,38 @@
 .owl-carousel .owl-stage-outer {
   overflow: visible;
 }
+
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
   background: #20c7ab;
   padding: 20px 32px !important;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+.drag-section::-webkit-scrollbar-thumb,
+.drag-section::-webkit-scrollbar-track {
+  @apply h-0 opacity-0 hidden;
+}
+
 .lightbox.open {
   display: flex;
 }
 .owl-carousel .owl-stage {
   @apply flex items-center;
 }
-.bedouin-menu.active {
+
+.bedouin-menu.active,
+.bedouin-details.active {
   @apply visible opacity-100;
 }
-.bedouin-menu.active .bedouin-menu-content{
-  @apply  translate-y-0;
+
+.bedouin-menu.active .bedouin-menu-content {
+  @apply translate-y-0;
+}
+.bedouin-details.active .bedouin-details-content {
+  @apply translate-y-0;
 }
 
 @layer base {

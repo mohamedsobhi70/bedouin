@@ -1,9 +1,27 @@
 // menu 
-$(".bedouin-menu-btn").on("click",function(){
-    $(".bedouin-menu").addClass("active")
+$(".bedouin-menu-btn").on("click", function () {
+    $(".bedouin-menu").addClass("active");
+    $("body").css("overflow", "hidden");
+
 })
-$(".bedouin-menu-close").on("click",function(){
-    $(".bedouin-menu").removeClass("active")
+
+$(".bedouin-menu-close").on("click", function () {
+    $(".bedouin-menu").removeClass("active");
+    $("body").css("overflow", "visible");
+
+})
+
+// details menu 
+$(".bedouin-details-btn").on("click", function () {
+    $(".bedouin-details").addClass("active");
+    $("body").css("overflow", "hidden");
+
+})
+
+$(".bedouin-details-close").on("click", function () {
+    $(".bedouin-details").removeClass("active");
+    $("body").css("overflow", "visible");
+
 })
 
 // counter 
