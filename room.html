@@ -72,7 +72,7 @@
                         too if you wish) are served.
                     </p>
                 </div>
-                <div class="flex flex-col gap-4 overflow-auto drag-section lg:cursor-auto cursor-grab px-8 lg:px-0">
+                <div class="flex flex-col gap-4 overflow-auto lg:overflow-y-visible drag-section lg:cursor-auto cursor-grab px-8 lg:px-0">
                     <div class="flex gap-[15px] items-center" draggable="true">
                         <div
                             class="flex gap-2.5 items-center shrink-0 rounded-[5px] border border-[#D8D8D8] py-[18px] px-[25px]">
@@ -475,8 +475,8 @@
                             </h3>
                             <div class="flex items-center gap-2 border border-[#D8D8D8] rounded-[5px] p-4">
                                 <input title="from"
-                                    class="from w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
-                                    type="text" id="from" name="from" placeholder="-- / -- / --">
+                                    class="w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
+                                    type="text" id="check-in" name="check-in" placeholder="-- / -- / --">
                                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -497,8 +497,8 @@
                             </h3>
                             <div class="flex items-center gap-2 border border-[#D8D8D8] rounded-[5px] p-4">
                                 <input title="to"
-                                    class="to w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
-                                    type="text" id="to" name="to" placeholder="-- / -- / --">
+                                    class="w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
+                                    type="text" id="check-out" name="check-out" placeholder="-- / -- / --">
                                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1198,12 +1198,19 @@
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
+        const checkin = new Litepicker({
+            element: document.getElementById('check-in'),
+            format:"DD/MM/YYYY",
+            singleMode:false,
+            elementEnd: document.getElementById('check-out'),
+        });
         const footercheckin = new Litepicker({
-            element: document.getElementById('footer-check-in')
+            element: document.getElementById('footer-check-in'),
+            format:"DD/MM/YYYY",
+            singleMode:false,
+            elementEnd: document.getElementById('footer-check-out'),
         });
-        const footercheckout = new Litepicker({
-            element: document.getElementById('footer-check-out')
-        });
+        
         $('.drag-section').scrollLeft('300');
     </script>
 </body>

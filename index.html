@@ -1095,22 +1095,17 @@
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
-        new Litepicker({
+       const checkin = new Litepicker({
             element: document.getElementById('check-in'),
-            singleMode: false,
-        })
-
-        // const checkin = new Litepicker({
-        //     element: document.getElementById('check-in')
-        // });
-        const checkout = new Litepicker({
-            element: document.getElementById('check-out')
+            format:"DD/MM/YYYY",
+            singleMode:false,
+            elementEnd: document.getElementById('check-out'),
         });
         const footercheckin = new Litepicker({
-            element: document.getElementById('footer-check-in')
-        });
-        const footercheckout = new Litepicker({
-            element: document.getElementById('footer-check-out')
+            element: document.getElementById('footer-check-in'),
+            format:"DD/MM/YYYY",
+            singleMode:false,
+            elementEnd: document.getElementById('footer-check-out'),
         });
     </script>
 </body>
