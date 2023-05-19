@@ -461,7 +461,8 @@
                     </div>
 
                     <button type="button"
-                        class="bedouin-details-btn lg:hidden py-3.5 px-8 rounded-lg bg-[#20C7AB] text-black text-base leading-6">See All
+                        class="bedouin-details-btn lg:hidden py-3.5 px-8 rounded-lg bg-[#20C7AB] text-black text-base leading-6">See
+                        All
                         Features</button>
                 </div>
 
@@ -685,10 +686,12 @@
         </div>
 
         <!-- room details -->
-        <div class="bedouin-details fixed w-full invisible opacity-0 flex flex-col pt-8 bg-[#00332F] transition-all duration-300 h-full left-0 top-0 z-50">
+        <div
+            class="bedouin-details fixed w-full invisible opacity-0 flex flex-col pt-8 bg-[#00332F] transition-all duration-300 h-full left-0 top-0 z-50">
             <h2 class="px-8 relative py-6 text-white text-center text-[32px] leading-[48px] ">
                 Unique Features
-                <button type="button" title="back" class="bedouin-details-close absolute left-8 top-1/2 -translate-y-1/2">
+                <button type="button" title="back"
+                    class="bedouin-details-close absolute left-8 top-1/2 -translate-y-1/2">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.57 5.92999L3.5 12L9.57 18.07" stroke="white" stroke-width="1.5"
                             stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -697,7 +700,8 @@
                     </svg>
                 </button>
             </h2>
-            <div class="bedouin-details-content transition-all duration-300 translate-y-10 container bg-white py-8 overflow-auto h-full">
+            <div
+                class="bedouin-details-content transition-all duration-300 translate-y-10 container bg-white py-8 overflow-auto h-full">
                 <div class="grid lg:grid-cols-2 gap-[35px] lg:gap-10 lg:pr-11 col-span-2 px-10">
 
                     <div class="flex flex-col gap-[35px]">
@@ -1188,10 +1192,18 @@
 
     </footer>
 
-
     <script src="assets/js/jquiry.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
+        const footercheckin = new Litepicker({
+            element: document.getElementById('footer-check-in')
+        });
+        const footercheckout = new Litepicker({
+            element: document.getElementById('footer-check-out')
+        });
         $('.drag-section').scrollLeft('300');
     </script>
 </body>
