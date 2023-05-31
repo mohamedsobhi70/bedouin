@@ -619,6 +619,10 @@ video {
   position: sticky;
 }
 
+.inset-1\/2 {
+  inset: 50%;
+}
+
 .-bottom-0 {
   bottom: -0px;
 }

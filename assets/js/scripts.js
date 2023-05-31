@@ -123,51 +123,98 @@ if ($(".rooms-carousel").length > 0) {
 // *********************************************
 
 // gallery lightbox 
-if ($(".lightbox").length > 0) {
-    const galleryItems = document.querySelectorAll(".gallery-item"), // all items
-        totalgalleryItems = galleryItems.length, // length of the item
-        lightbox = document.querySelector(".lightbox"),
-        lightboxImg = lightbox.querySelector(".lightbox-img");
-    let itemIndex = 0;
+// if ($(".lightbox").length > 0) {
+//     const galleryItems = document.querySelectorAll(".gallery-item"), // all items
+//         totalgalleryItems = galleryItems.length, // length of the item
+//         lightbox = document.querySelector(".lightbox"),
+//         lightboxImg = lightbox.querySelector(".lightbox-img");
+//     let itemIndex = 0;
 
-    for (let i = 0; i < totalgalleryItems; i++) {
-        galleryItems[i].addEventListener("click", function () {
-            itemIndex = i;
-            changeItem();
-            toggleLightbox();
-        });
-    }
-    function changeItem() {
-        imgSrc = galleryItems[itemIndex].querySelector("img").getAttribute("src");
-        lightboxImg.src = imgSrc;
-    }
+//     for (let i = 0; i < totalgalleryItems; i++) {
+//         galleryItems[i].addEventListener("click", function () {
+//             itemIndex = i;
+//             changeItem();
+//             toggleLightbox();
+//         });
+//     }
+//     function changeItem() {
+//         imgSrc = galleryItems[itemIndex].querySelector("img").getAttribute("src");
+//         lightboxImg.src = imgSrc;
+//     }
 
-    function toggleLightbox() {
-        lightbox.classList.toggle("open");
-    }
+//     function toggleLightbox() {
+//         lightbox.classList.toggle("open");
+//     }
 
-    function prevItem() {
-        if (itemIndex === 0) {
-            itemIndex = totalgalleryItems - 1;
-        } else {
-            itemIndex--;
-        }
-        changeItem();
-    }
+//     function prevItem() {
+//         if (itemIndex === 0) {
+//             itemIndex = totalgalleryItems - 1;
+//         } else {
+//             itemIndex--;
+//         }
+//         changeItem();
+//     }
 
-    function nextItem() {
-        if (itemIndex === totalgalleryItems - 1) {
-            itemIndex = 0;
-        } else {
-            itemIndex++;
-        }
-        changeItem();
-    }
-    // closing the lightbox
-    lightbox.addEventListener("click", function (event) {
-        if (event.target === lightbox) {
-            toggleLightbox();
-        }
-    });
-}
+//     function nextItem() {
+//         if (itemIndex === totalgalleryItems - 1) {
+//             itemIndex = 0;
+//         } else {
+//             itemIndex++;
+//         }
+//         changeItem();
+//     }
+//     // closing the lightbox
+//     lightbox.addEventListener("click", function (event) {
+//         if (event.target === lightbox) {
+//             toggleLightbox();
+//         }
+//     });
+// }
 // *********************************************
+
+if ($('.gallery-item').length) {
+
+    const galleryItems = $(".gallery-item");
+    // galleryItems.each(function () {
+        let th = $(this);
+        $(".gallery-item").on("click", function () {
+            return false;
+        
+        })
+        $(".gallery-item").magnificPopup({
+            midClick: true,
+            type: 'image',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+            },
+            zoom: {
+                enabled: true,
+                duration: 300, // duration of the effect, in milliseconds
+                easing: 'ease-in-out', // CSS transition easing function
+                opener: function (openerElement) {
+                    return openerElement.is('a') ? openerElement : openerElement.parents('.gallery-item-wrapper');
+                }
+            }
+        });
+    // })
+
+    // $('.crust-magnific-link').on('click', function () {
+    //     return false;
+    // });
+    // $('.crust-magnific-link').magnificPopup({
+    //     midClick: true,
+    //     type: 'image',
+    //     gallery: {
+    //         enabled: true
+    //     },
+    //     zoom: {
+    //         enabled: true,
+    //         duration: 300, // duration of the effect, in milliseconds
+    //         easing: 'ease-in-out', // CSS transition easing function
+    //         opener: function (openerElement) {
+    //             return openerElement.is('a') ? openerElement : openerElement.parents('.crust-gallery-item');
+    //         }
+    //     }
+    // });
+}

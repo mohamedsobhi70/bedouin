@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="description">
     <title>Bedouin Moon</title>
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -26,7 +27,8 @@
                     height="96" alt="Bedouin Logo">
             </a>
 
-            <a href="#" class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB] transition-all duration-300 hover:bg-[#00AE91] hover:text-white">
+            <a href="#"
+                class="hidden lg:block text-base text-black leading-6 py-3.5 px-8 rounded-lg bg-[#20C7AB] transition-all duration-300 hover:bg-[#00AE91] hover:text-white">
                 Reserve Your Room
             </a>
         </div>
@@ -37,26 +39,26 @@
         <div class="container py-8 lg:py-12 flex flex-col gap-4 lg:gap-0 px-8 lg:px-0">
             <h2 class="text-[32px] lg:hidden text-[#002421E5] leading-10 lg:font-medium">Two-Bedroom Apartment</h2>
             <div class=" grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-5 rounded-xl overflow-hidden">
-                <div class="col-span-2 row-span-2">
+                <a href="assets/images/room-1.jpg" class="gallery-item col-span-2 row-span-2">
                     <img src="assets/images/room-1.jpg" class="w-full h-full object-cover" width="581" height="500"
                         alt="Room">
-                </div>
-                <div class="">
-                    <img src="assets/images/room-2.jpg" class="w-full h-full object-cover" width="581" height="500"
+                </a>
+                <a href="assets/images/room-2.jpg" class="gallery-item">
+                    <img src="assets/images/room-2.jpg" class="w-full h-full object-cover" width="270" height="240"
                         alt="Room">
-                </div>
-                <div class="">
-                    <img src="assets/images/room-3.jpg" class="w-full h-full object-cover" width="581" height="500"
+                </a>
+                <a href="assets/images/room-3.jpg" class="gallery-item">
+                    <img src="assets/images/room-3.jpg" class="w-full h-full object-cover" width="280" height="240"
                         alt="Room">
-                </div>
-                <div class="hidden lg:block">
-                    <img src="assets/images/room-4.jpg" class="w-full h-full object-cover" width="581" height="500"
+                </a>
+                <a href="assets/images/room-4.jpg" class="gallery-item hidden lg:block">
+                    <img src="assets/images/room-4.jpg" class="w-full h-full object-cover" width="270" height="240"
                         alt="Room">
-                </div>
-                <div class="hidden lg:block">
-                    <img src="assets/images/room-5.jpg" class="w-full h-full object-cover" width="581" height="500"
+                </a>
+                <a href="assets/images/room-5.jpg" class="gallery-item hidden lg:block">
+                    <img src="assets/images/room-5.jpg" class="w-full h-full object-cover" width="280" height="240"
                         alt="Room">
-                </div>
+                </a>
             </div>
         </div>
 
@@ -477,10 +479,10 @@
                                 <input title="from"
                                     class="w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
                                     type="text" id="check-in" name="check-in" placeholder="-- / -- / --">
-                                    <label for="check-in" class="w-[18px] h-[20px]">
-                                        <img src="assets/images/calendar-dark.svg" class="w-full h-full object-cover" width="18"
-                                            height="20" alt="calender">
-                                    </label>
+                                <label for="check-in" class="w-[18px] h-[20px]">
+                                    <img src="assets/images/calendar-dark.svg" class="w-full h-full object-cover"
+                                        width="18" height="20" alt="calender">
+                                </label>
                             </div>
                         </div>
 
@@ -492,10 +494,10 @@
                                 <input title="to"
                                     class="w-full bg-transparent focus-visible:outline-none text-black placeholder:text-[#3F5856]"
                                     type="text" id="check-out" name="check-out" placeholder="-- / -- / --">
-                                    <label for="check-out" class="w-[18px] h-[20px]">
-                                        <img src="assets/images/calendar-dark.svg" class="w-full h-full object-cover" width="18"
-                                            height="20" alt="calender">
-                                    </label>
+                                <label for="check-out" class="w-[18px] h-[20px]">
+                                    <img src="assets/images/calendar-dark.svg" class="w-full h-full object-cover"
+                                        width="18" height="20" alt="calender">
+                                </label>
                             </div>
                         </div>
 
@@ -1051,7 +1053,8 @@
                         <div class="flex items-center justify-between counter">
                             <input
                                 class="counter-num text-white text-base leading-6 w-full shrink bg-transparent placeholder:text-white focus:outline-none"
-                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num" readonly>
+                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num"
+                                readonly>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
                                     class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
@@ -1190,6 +1193,7 @@
     <script src="assets/js/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
         const checkin = new Litepicker({
@@ -1197,7 +1201,7 @@
             lockDaysFormat: "DD/MM/YYYY",
             singleMode: false,
             elementEnd: document.getElementById('check-out'),
-            minDate: new Date() ,
+            minDate: new Date(),
             disallowLockDaysInRange: true,
         });
         const footercheckin = new Litepicker({
