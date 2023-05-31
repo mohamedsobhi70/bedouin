@@ -59,7 +59,10 @@
                             <input title="from" autocomplete="off"
                                 class="from w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
                                 type="text" id="check-in" name="check-in" placeholder="-- / -- / --">
-                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
+                            <label for="check-in" class="w-[13px] h-[13px]">
+                                <img src="assets/images/calender.svg" class="w-full h-full object-cover" width="13"
+                                    height="13" alt="calender">
+                            </label>
                         </div>
                     </div>
 
@@ -69,15 +72,20 @@
                             <input title="to" autocomplete="off"
                                 class="to w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
                                 type="text" id="check-out" name="check-out" placeholder="-- / -- / --">
+                            <label for="check-out" class="w-[13px] h-[13px]">
+                                <img src="assets/images/calender.svg" class="w-full h-full object-cover" width="13"
+                                    height="13" alt="calender">
+                            </label>
 
-                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
                         </div>
                     </div>
 
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
                         <div class="flex items-center justify-between counter">
-                            <span class="counter-num text-white text-base leading-6">01</span>
+                            <input
+                                class="counter-num text-white text-base leading-6 w-full shrink bg-transparent placeholder:text-white focus:outline-none"
+                                value="1" placeholder="Guest Num" type="text" name="num" id="num" readonly>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
                                     class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
@@ -958,8 +966,11 @@
 
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
+
                         <div class="flex items-center justify-between counter">
-                            <span class="counter-num text-white text-base leading-6">01</span>
+                            <input
+                                class="counter-num text-white text-base leading-6 w-full shrink bg-transparent placeholder:text-white focus:outline-none"
+                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num" readonly>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
                                     class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
@@ -1097,24 +1108,29 @@
 
 
     <script src="assets/js/jquiry.js"></script>
-    <!-- <script src="assets/js/jquiry-ui.js"></script> -->
     <script src="assets/js/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/litepicker.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script>
+
         const checkin = new Litepicker({
             element: document.getElementById('check-in'),
-            format: "DD/MM/YYYY",
+            lockDaysFormat: "DD/MM/YYYY",
             singleMode: false,
             elementEnd: document.getElementById('check-out'),
+            minDate: new Date() - 1,
+            disallowLockDaysInRange: true,
         });
         const footercheckin = new Litepicker({
             element: document.getElementById('footer-check-in'),
-            format: "DD/MM/YYYY",
+            lockDaysFormat: "DD/MM/YYYY",
             singleMode: false,
             elementEnd: document.getElementById('footer-check-out'),
+            minDate: new Date() - 1,
+            disallowLockDaysInRange: true,
         });
+
     </script>
 </body>
 

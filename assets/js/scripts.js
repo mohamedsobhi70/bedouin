@@ -29,12 +29,12 @@ if ($(".counter").length > 0) {
     $(".counter").each(function () {
         let th = $(this);
         th.find(".decrease").on("click", function () {
-            if (+(th.find(".counter-num").html()) > 1) {
-                th.find(".counter-num").text(+(th.find(".counter-num").html()) - 1);
+            if (+(th.find(".counter-num").val()) > 1) {
+                th.find(".counter-num").val(+(th.find(".counter-num").val()) - 1);
             }
         })
         th.find(".increase").on("click", function () {
-            th.find(".counter-num").text(+(th.find(".counter-num").html()) + 1);
+            th.find(".counter-num").val(+(th.find(".counter-num").val()) + 1);
         })
     }
     )

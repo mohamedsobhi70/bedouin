@@ -1057,7 +1057,9 @@
                     <div class="py-2 pr-2.5 pl-5 bg-[#FFFFFF2B] rounded-lg flex flex-col gap-1.5 lg:w-[170px]">
                         <p class="text-lg text-white leading-6 font-medium">Guests</p>
                         <div class="flex items-center justify-between counter">
-                            <span class="counter-num text-white text-base leading-6">01</span>
+                            <input
+                                class="counter-num text-white text-base leading-6 w-full shrink bg-transparent placeholder:text-white focus:outline-none"
+                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num" readonly>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
                                     class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
