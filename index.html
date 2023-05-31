@@ -949,7 +949,10 @@
                             <input title="from" autocomplete="off"
                                 class="w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
                                 type="text" id="footer-check-in" name="footer-check-in" placeholder="-- / -- / --">
-                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
+                            <label for="footer-check-in" class="w-[13px] h-[13px]">
+                                <img src="assets/images/calender.svg" class="w-full h-full object-cover" width="13"
+                                    height="13" alt="calender">
+                            </label>
                         </div>
                     </div>
 
@@ -960,7 +963,10 @@
                                 class="w-full bg-transparent focus-visible:outline-none text-white placeholder:text-white"
                                 type="text" id="footer-check-out" name="footer-check-out" placeholder="-- / -- / --">
 
-                            <img src="assets/images/calender.svg" width="13" height="13" alt="calender">
+                            <label for="footer-check-out" class="w-[13px] h-[13px]">
+                                <img src="assets/images/calender.svg" class="w-full h-full object-cover" width="13"
+                                    height="13" alt="calender">
+                            </label>
                         </div>
                     </div>
 
@@ -970,7 +976,8 @@
                         <div class="flex items-center justify-between counter">
                             <input
                                 class="counter-num text-white text-base leading-6 w-full shrink bg-transparent placeholder:text-white focus:outline-none"
-                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num" readonly>
+                                value="1" placeholder="Guest Num" type="text" name="footer-num" id="footer-num"
+                                readonly>
                             <div class="flex gap-[5px] items-center">
                                 <button type="button" title="decrease"
                                     class="decrease border border-[#717F7A] w-5 h-5 flex items-center justify-center rounded-[3px]">
@@ -1119,7 +1126,7 @@
             lockDaysFormat: "DD/MM/YYYY",
             singleMode: false,
             elementEnd: document.getElementById('check-out'),
-            minDate: new Date() - 1,
+            minDate: new Date(),
             disallowLockDaysInRange: true,
         });
         const footercheckin = new Litepicker({
@@ -1127,7 +1134,7 @@
             lockDaysFormat: "DD/MM/YYYY",
             singleMode: false,
             elementEnd: document.getElementById('footer-check-out'),
-            minDate: new Date() - 1,
+            minDate: new Date(),
             disallowLockDaysInRange: true,
         });
 
