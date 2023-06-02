@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bedouin-header.sticky{
+@apply top-0 py-6 bg-white
+}
 .owl-carousel .owl-stage-outer {
   overflow: visible;
 }

@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         'Recoleta': ['Recoleta', 'sans-serif'],
+        'Inter': ['Inter', 'sans-serif'],
       },
       backgroundImage: {
         'room-gradient': 'linear-gradient(180deg, rgba(0, 0, 0, 0) -6.78%, #000000 188.98%)',
