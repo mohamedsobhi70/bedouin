@@ -226,3 +226,11 @@ if ($('.gallery-item').length) {
     //     }
     // });
 }
+
+
+if ($(".filt-btn").length) {
+    $(".filt-btn").on("click", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".filt-section").toggleClass("hidden")
+    })
+}

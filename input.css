@@ -41,7 +41,10 @@
 .bedouin-details.active .bedouin-details-content {
   @apply translate-y-0;
 }
+.filt-btn.active{
+  @apply border-[#20B99E] text-[#20B99E] bg-[#E9FAF7]; 
 
+}
 @layer base {
   @font-face {
     font-family: Recoleta;

@@ -89,7 +89,7 @@
         <section class="">
             <div class="container py-6 flex items-center justify-between">
                 <h2 class="text-black text-2xl leading-8 font-semibold">
-                    Guest & Contact Information 
+                    Guest & Contact Information
                 </h2>
                 <p class="text-sm leading-5 text-[#667085]">
                     Enter Contact Information
@@ -126,7 +126,7 @@
                     </div>
                     <div class="flex items-center gap-3 w-[200px]">
                         <img src="assets/images/Check.svg" width="24" height="24" alt="check">
-                        <span class="text-sm leading-5  text-[#667085]">Outdoor Pool</span>
+                        <span class="text-sm leading-5  text-[#667085]">Fitness Center</span>
                     </div>
                     <div class="flex items-center gap-3 w-[200px]">
                         <img src="assets/images/Check.svg" width="24" height="24" alt="check">
@@ -135,7 +135,76 @@
                 </div>
             </div>
 
-       
+
+            <div class="container py-6 grid lg:grid-cols-4">
+                <form action="" class="flex flex-col gap-8 col-span-3">
+                    <div class="grid-cols-2 grid gap-4 ">
+                        <div class="flex col-span-1 flex-col gap-1.5">
+                            <label for="firstname"
+                                class="text-xs leading-4 font-medium text-[#1D2939] tracking-[-.01em]">First
+                                Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter First Name"
+                                class="placeholder:text-[#667085] text-sm left-5 border border-[#D0D5DD] rounded-lg p-2.5 focus:outline-none  transition-shadow duration-300">
+                        </div>
+                        <div class="flex col-span-1 flex-col gap-1.5">
+                            <label for="lastname"
+                                class="text-xs leading-4 font-medium text-[#1D2939] tracking-[-.01em]">Last
+                                Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"
+                                class="placeholder:text-[#667085] text-sm left-5 border border-[#D0D5DD] rounded-lg p-2.5 focus:outline-none  transition-shadow duration-300">
+                        </div>
+                        <div class="flex col-span-2 flex-col gap-1.5">
+                            <label for="email"
+                                class="text-xs leading-4 font-medium text-[#1D2939] tracking-[-.01em]">Last Name</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email"
+                                class="placeholder:text-[#667085] text-sm left-5 border border-[#D0D5DD] rounded-lg p-2.5 focus:outline-none  transition-shadow duration-300">
+                        </div>
+                        <div class="flex col-span-2 flex-col gap-1.5">
+                            <label for="phone"
+                                class="text-xs leading-4 font-medium text-[#1D2939] tracking-[-.01em]">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number"
+                                class="placeholder:text-[#667085] text-sm left-5 border border-[#D0D5DD] rounded-lg p-2.5 focus:outline-none  transition-shadow duration-300">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h3 class="text-base leading-6 text-[#101828] font-semibold">Special Request</h3>
+                        <p class="text-sm leading-5 text-[#101828]">TraveIing with a pet, service animal, etc.</p>
+                        <a href="#" class="flex  items-center gap-3 text-sm leading-5 font-medium text-[#30AAA0]">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.125 10H16.875" stroke="#30AAA0" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10 3.125V16.875" stroke="#30AAA0" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Add Special Request
+                        </a>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="text-sm leading-5 text-[#101828]">
+                            By clicking "Book Reservation," I agree to the
+                            <a href="#" class="text-[#18837A] font-medium">Rules and Restrictions</a>
+                            , <a href="#" class="text-[#18837A] font-medium">Site Usage Agreement</a> ,
+                            and agree that Hilton will collect, use, share and transfer my information as set out in
+                            <a href="#" class="text-[#18837A] font-medium">Hilton’s Global Privacy Statement.</a>
+                        </p>
+                        <p class="text-sm leading-5 text-[#101828]">
+                            I agree to the
+                            <a href="#" class="text-[#18837A] font-medium">
+                                Hilton Honors Program Terms and Conditions .
+                            </a>
+                            
+                        </p>
+
+                    </div>
+
+                    <a href="#"
+                        class="w-fit text-base text-black leading-6 font-semibold py-3.5 px-8 rounded-lg bg-[#20C7AB]  transition-all duration-300 hover:bg-[#00AE91] hover:text-white">
+                        Book Reservation
+                    </a>
+                </form>
+            </div>
+
         </section>
     </main>
 
