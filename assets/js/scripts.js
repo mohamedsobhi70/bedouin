@@ -205,26 +205,6 @@ if ($('.gallery-item').length) {
             }
         }
     });
-    // })
-
-    // $('.crust-magnific-link').on('click', function () {
-    //     return false;
-    // });
-    // $('.crust-magnific-link').magnificPopup({
-    //     midClick: true,
-    //     type: 'image',
-    //     gallery: {
-    //         enabled: true
-    //     },
-    //     zoom: {
-    //         enabled: true,
-    //         duration: 300, // duration of the effect, in milliseconds
-    //         easing: 'ease-in-out', // CSS transition easing function
-    //         opener: function (openerElement) {
-    //             return openerElement.is('a') ? openerElement : openerElement.parents('.crust-gallery-item');
-    //         }
-    //     }
-    // });
 }
 
 
@@ -234,3 +214,32 @@ if ($(".filt-btn").length) {
         $(".filt-section").toggleClass("hidden")
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+
+// fetch('https://api.djubo.com/v2/hotel/inventory', {
+//   headers: {
+//     'Authorization': 'Bearer <your_api_key>',
+//     'Content-Type': 'application/json'
+//   },
+//   method: 'GET'
+// })
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.error(error));
