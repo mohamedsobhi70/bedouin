@@ -1,10 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       container: {
         center: true,
+        padding: {
+          DEFAULT: '32px',
+          lg: '16px',
+        },
         screens: {
           xl: '1170px'
         },
@@ -18,6 +22,12 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: ["light"],
+    styled: false,
+  },
 }
 

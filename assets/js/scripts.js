@@ -28,32 +28,41 @@ $(".bedouin-details-close").on("click", function () {
 if ($(".counter").length > 0) {
     $(".counter").each(function () {
         let th = $(this);
+
         th.find(".decrease").on("click", function () {
-            if (+(th.find(".counter-num").val()) > 1) {
-                th.find(".counter-num").val(+(th.find(".counter-num").val()) - 1);
+            let input = th.find(".counter-num");
+            let currentValue = +input.val();
+            if (currentValue > 0) {
+                input.val(currentValue - 1).trigger('input'); // Trigger input event to update any listeners
             }
-        })
+        });
+
         th.find(".increase").on("click", function () {
-            th.find(".counter-num").val(+(th.find(".counter-num").val()) + 1);
-        })
-    }
-    )
-}
-// *********************************************
-
-// gallery masonary
-if ($(".gallery").length > 0) {
-
-    $('.gallery').packery({
-        itemSelector: '.grid-item',
-        gutter: 20,
+            let input = th.find(".counter-num");
+            input.val(+input.val() + 1).trigger('input'); // Trigger input event to update any listeners
+        });
     });
+}
+if ($("#rooms-num").length > 0) {
+    function updateSummary() {
+        // Get input values
+        const rooms = $('#rooms-num').val();
+        const adults = $('#adults-num').val();
+        const children = $('#children-num').val();
+
+        // Update corresponding span elements
+        $('.rooms-selected-num').text(rooms);
+        $('.adults-selected-num').text(adults);
+        $('.children-selected-num').text(children);
+    }
+
+    // Add event listeners to input elements
+    $('#rooms-num, #adults-num, #children-num').on('input', updateSummary);
 }
 // *********************************************
 
 // testimonials carousel
 if ($(".testimonials-carousel").length > 0) {
-
     $('.testimonials-carousel').owlCarousel({
         loop: true,
         center: true,
@@ -71,10 +80,10 @@ if ($(".testimonials-carousel").length > 0) {
             1000: {
                 margin: 32,
                 items: 3
-
             }
         }
     });
+
     $('.testimonials-carousel').trigger("to.owl.carousel", [1, 1])
     // Go to the next item
     $('.testimonials  .nxtBtn').click(function () {
@@ -89,7 +98,6 @@ if ($(".testimonials-carousel").length > 0) {
 
 //rooms carousel
 if ($(".rooms-carousel").length > 0) {
-
     $('.rooms-carousel').owlCarousel({
         nav: false,
         dots: false,
@@ -122,55 +130,6 @@ if ($(".rooms-carousel").length > 0) {
 }
 // *********************************************
 
-// gallery lightbox 
-// if ($(".lightbox").length > 0) {
-//     const galleryItems = document.querySelectorAll(".gallery-item"), // all items
-//         totalgalleryItems = galleryItems.length, // length of the item
-//         lightbox = document.querySelector(".lightbox"),
-//         lightboxImg = lightbox.querySelector(".lightbox-img");
-//     let itemIndex = 0;
-
-//     for (let i = 0; i < totalgalleryItems; i++) {
-//         galleryItems[i].addEventListener("click", function () {
-//             itemIndex = i;
-//             changeItem();
-//             toggleLightbox();
-//         });
-//     }
-//     function changeItem() {
-//         imgSrc = galleryItems[itemIndex].querySelector("img").getAttribute("src");
-//         lightboxImg.src = imgSrc;
-//     }
-
-//     function toggleLightbox() {
-//         lightbox.classList.toggle("open");
-//     }
-
-//     function prevItem() {
-//         if (itemIndex === 0) {
-//             itemIndex = totalgalleryItems - 1;
-//         } else {
-//             itemIndex--;
-//         }
-//         changeItem();
-//     }
-
-//     function nextItem() {
-//         if (itemIndex === totalgalleryItems - 1) {
-//             itemIndex = 0;
-//         } else {
-//             itemIndex++;
-//         }
-//         changeItem();
-//     }
-//     // closing the lightbox
-//     lightbox.addEventListener("click", function (event) {
-//         if (event.target === lightbox) {
-//             toggleLightbox();
-//         }
-//     });
-// }
-// *********************************************
 
 if ($('.room-details').length) {
     $('.room-details').on("mouseenter", function () {
@@ -178,33 +137,6 @@ if ($('.room-details').length) {
     }).on("mouseleave", function () {
         $(this).find("span").hide(200)
     })
-}
-
-if ($('.gallery-item').length) {
-
-    const galleryItems = $(".gallery-item");
-    // galleryItems.each(function () {
-    let th = $(this);
-    $(".gallery-item").on("click", function () {
-        return false;
-
-    })
-    $(".gallery-item").magnificPopup({
-        midClick: true,
-        type: 'image',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-        },
-        zoom: {
-            enabled: true,
-            duration: 300, // duration of the effect, in milliseconds
-            easing: 'ease-in-out', // CSS transition easing function
-            opener: function (openerElement) {
-                return openerElement.is('a') ? openerElement : openerElement.parents('.gallery-item-wrapper');
-            }
-        }
-    });
 }
 
 
@@ -217,29 +149,140 @@ if ($(".filt-btn").length) {
 
 
 
+//
 
 
 
+//
 
+// const apiKey = '<your_api_key>';
+// const endpointUrl = 'https://api.djubo.com/v2/hotel/inventory';
 
-
-
-
-
-
-
-
-
-// 
-
-
-// fetch('https://api.djubo.com/v2/hotel/inventory', {
+// fetch(endpointUrl, {
+//   method: 'GET',
 //   headers: {
-//     'Authorization': 'Bearer <your_api_key>',
+//     'Authorization': `Bearer ${apiKey}`,
 //     'Content-Type': 'application/json'
-//   },
-//   method: 'GET'
+//   }
 // })
 // .then(response => response.json())
-// .then(data => console.log(data))
-// .catch(error => console.error(error));
+// .then(data => {
+//   // Process the response data here
+//   const rooms = data.rooms;
+//   const roomTypes = data.room_types;
+
+//   // Display the available room types on the web page
+//   const roomTypeSelect = document.getElementById('room-type-select');
+//   roomTypes.forEach(roomType => {
+//     const option = document.createElement('option');
+//     option.value = roomType.id;
+//     option.text = roomType.name;
+//     roomTypeSelect.appendChild(option);
+//   });
+
+//   // Handle the user's booking request
+//   const bookButton = document.getElementById('book-button');
+//   bookButton.addEventListener('click', () => {
+//     const selectedRoomTypeId = roomTypeSelect.value;
+//     const selectedRoomType = roomTypes.find(roomType => roomType.id === selectedRoomTypeId);
+//     const selectedRoom = rooms.find(room => room.room_type_id === selectedRoomTypeId && room.status === 'available');
+//     if (selectedRoom) {
+//       // Book the room
+//       selectedRoom.status = 'booked';
+//       alert(`Room ${selectedRoom.room_number} has been booked for ${selectedRoomType.name}!`);
+//     } else {
+//       // No available rooms of this type
+//       alert(`Sorry, there are no available rooms of type ${selectedRoomType.name}. Please choose another room type.`);
+//     }
+//   });
+// })
+// .catch(error => {
+//   // Handle any errors here
+//   console.error(error);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+// //////////////////////////////
+// const apiKey = '<your_api_key>';
+// const inventoryEndpoint = 'https://api.djubo.com/v2/hotel/inventory';
+// const ratesEndpoint = 'https://api.djubo.com/v2/hotel/rates';
+
+// // Get the list of available room types and display them on the page
+// fetch(inventoryEndpoint, {
+//   method: 'GET',
+//   headers: {
+//     'Authorization': `Bearer ${apiKey}`,
+//     'Content-Type': 'application/json'
+//   }
+// })
+// .then(response => response.json())
+// .then(data => {
+//   const roomTypes = data.room_types;
+//   // ... display the room types on the page ...
+// });
+
+// // Allow the user to select the check-in and check-out dates and number of rooms
+// const checkInDateInput = document.getElementById('check-in-date');
+// const checkOutDateInput = document.getElementById('check-out-date');
+// const numRoomsInput = document.getElementById('num-rooms');
+
+// // Check availability when the user clicks the "Check Availability" button
+// const checkAvailabilityButton = document.getElementById('check-availability');
+// checkAvailabilityButton.addEventListener('click', () => {
+//   const checkInDate = checkInDateInput.value;
+//   const checkOutDate = checkOutDateInput.value;
+//   const numRooms = numRoomsInput.value;
+
+//   // Use the inventory endpoint to check availability for the selected dates and number of rooms
+//   const inventoryQueryParams = `check_in=${checkInDate}&check_out=${checkOutDate}&num_rooms=${numRooms}`;
+//   fetch(`${inventoryEndpoint}?${inventoryQueryParams}`, {
+//     method: 'GET',
+//     headers: {
+//       'Authorization': `Bearer ${apiKey}`,
+//       'Content-Type': 'application/json'
+//     }
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     const availableRooms = data.rooms.filter(room => room.status === 'available');
+//     if (availableRooms.length >= numRooms) {
+//       // Display the available rooms and pricing information on the page
+//       fetch(ratesEndpoint, {
+//         method: 'GET',
+//         headers: {
+//           'Authorization': `Bearer ${apiKey}`,
+//           'Content-Type': 'application/json'
+//         }
+//       })
+//       .then(response => response.json())
+//       .then(data => {
+//         const roomRates = data.rates;
+//         // ... display the available rooms and pricing information on the page ...
+//       });
+//     } else {
+//       // Display an error message indicating that the selected rooms are not available
+//       alert(`Sorry, there are no ${numRooms} available rooms for the selected dates.`);
+//     }
+//   })
+//   .catch(error => {
+//     // Handle any errors here
+//     console.error(error);
+//   });
+// });
+
+// // Handle the booking process when the user clicks the "Book Now" button
+// const bookNowButton = document.getElementById('book-now');
+// bookNowButton.addEventListener('click', () => {
+//   // Use the bookings endpoint to create a new booking for the selected rooms and dates
+//   // ... code to create a new booking using the bookings endpoint ...
+// });
